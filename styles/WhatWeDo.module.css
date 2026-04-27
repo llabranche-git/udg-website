@@ -1,0 +1,59 @@
+.introBlock { max-width: 900px; }
+.sectionTitle {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 600;
+  color: #04013f;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+}
+.body {
+  font-size: 17px;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.75;
+  margin-bottom: 20px;
+  max-width: 900px;
+}
+.servicesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.serviceItem {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 40px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+.serviceItem:last-child { border-bottom: none; }
+.serviceNum {
+  font-family: 'Archivo', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #b54fd8;
+  opacity: 0.4;
+  flex-shrink: 0;
+  width: 80px;
+  line-height: 1;
+}
+.serviceContent { flex: 1; }
+.serviceTitle {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  color: #04013f;
+  margin-bottom: 14px;
+}
+.serviceText {
+  font-size: 16px;
+  font-weight: 300;
+  color: #555;
+  line-height: 1.75;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .serviceItem { flex-direction: column; gap: 12px; }
+  .serviceNum { font-size: 32px; width: auto; }
+}

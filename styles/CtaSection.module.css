@@ -1,0 +1,57 @@
+.cta {
+  padding: 80px 20px;
+  background-image: url('/assets/cta-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tag {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #04013f;
+  margin-bottom: 16px;
+}
+.heading {
+  font-family: 'Archivo', sans-serif;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 600;
+  color: #04013f;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.sub {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #04013f;
+  margin-bottom: 32px;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #04013f;
+  border: 1px solid #04013f;
+  color: #fff;
+  border-radius: 48px;
+  padding: 14px 30px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.btn:hover { background: transparent; color: #04013f; }
+.arrowWrap { display: flex; align-items: center; }
+.arrowWrap img { width: 18px; height: 18px; }
