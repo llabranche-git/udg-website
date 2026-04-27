@@ -27,10 +27,10 @@ export default function Home() {
         </video>
         <div className={styles.heroOverlay}>
           <div className={styles.heroWords}>
-            <img src="/assets/reimagine.svg" alt="Reimagine" className={`${styles.heroWord} ${styles.word1}`} />
-            <img src="/assets/reinvent.svg" alt="Reinvent" className={`${styles.heroWord} ${styles.word2}`} />
-            <img src="/assets/redefine.svg" alt="Redefine" className={`${styles.heroWord} ${styles.word3}`} />
-            <img src="/assets/your-legacy.svg" alt="Your Legacy" className={`${styles.heroWord} ${styles.word4}`} />
+            <img src="/assets/reimagine.svg" alt="Reimagine" className="heroWord1" style={{maxWidth:'min(520px,75vw)',height:'auto',display:'block'}} />
+            <img src="/assets/reinvent.svg" alt="Reinvent" className="heroWord2" style={{maxWidth:'min(520px,75vw)',height:'auto',display:'block'}} />
+            <img src="/assets/redefine.svg" alt="Redefine" className="heroWord3" style={{maxWidth:'min(520px,75vw)',height:'auto',display:'block'}} />
+            <img src="/assets/your-legacy.svg" alt="Your Legacy" className="heroWord4" style={{maxWidth:'min(520px,75vw)',height:'auto',display:'block'}} />
           </div>
         </div>
       </section>

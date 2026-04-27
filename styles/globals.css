@@ -246,3 +246,13 @@ img { max-width: 100%; display: block; }
   .section.inner-banner { padding-top: 140px; padding-bottom: 30px; }
   .inner-banner h2 { font-size: 26px; }
 }
+
+/* Hero word fade-in animations — global scope to avoid CSS module keyframe mangling */
+@keyframes heroWordFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.heroWord1 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 0.5s; }
+.heroWord2 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 1.0s; }
+.heroWord3 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 1.5s; }
+.heroWord4 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 2.0s; }

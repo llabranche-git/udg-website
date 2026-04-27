@@ -31,16 +31,7 @@
   align-items: center;
   gap: 4px;
 }
-.heroWord {
-  max-width: min(520px, 75vw);
-  height: auto;
-  opacity: 0;
-}
-.word1 { animation: fadeIn 1.5s ease forwards 0.5s; }
-.word2 { animation: fadeIn 1.5s ease forwards 1.0s; }
-.word3 { animation: fadeIn 1.5s ease forwards 1.5s; }
-.word4 { animation: fadeIn 1.5s ease forwards 2.0s; }
-@keyframes fadeIn { to { opacity: 1; } }
+/* hero word animations moved to globals.css */
 
 /* Navy intro */
 .introWrap { max-width: 900px; }
