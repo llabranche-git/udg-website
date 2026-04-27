@@ -6,8 +6,9 @@ export default function Document() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;600&display=swap" rel="stylesheet" />
         <link rel="icon" href="/assets/favicon-32.png" />
+        <link rel="apple-touch-icon" href="/assets/favicon-256.png" />
       </Head>
       <body>
         <Main />

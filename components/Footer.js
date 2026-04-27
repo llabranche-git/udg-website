@@ -8,19 +8,15 @@ export default function Footer() {
         <div className={styles.grid}>
           <div className={styles.brand}>
             <Link href="/">
-              <img
-                src="/assets/logo.svg"
-                alt="Unified Digital Group"
-                className={styles.logo}
-              />
+              <img src="/assets/logo.svg" alt="Unified Digital Group" className={styles.logo} />
             </Link>
           </div>
           <div className={styles.links}>
             <Link href="/who-we-serve" className={styles.link}>Who We Serve</Link>
             <Link href="/who-we-are" className={styles.link}>Who We Are</Link>
             <Link href="/what-we-do" className={styles.link}>What We Do</Link>
-            <Link href="/contact-us" className={styles.link}>Contact Us</Link>
           </div>
+          <div></div>
           <div className={styles.cta}>
             <Link href="/contact-us" className={styles.ctaBtn}>
               <strong>Contact Us</strong>
@@ -31,7 +27,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.bottom}>
-          <span>©2025 Unified Digital Group. All rights reserved.</span>
+          <span className={styles.copyright}>©2025 Unified Digital Group. All rights reserved.</span>
         </div>
       </div>
     </footer>

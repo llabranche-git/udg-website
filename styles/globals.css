@@ -1,16 +1,44 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;600&display=swap');
+
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('/assets/fonts/archivo-expanded-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('/assets/fonts/archivo-expanded-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('/assets/fonts/archivo-expanded-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Archivo Expanded';
+  src: url('/assets/fonts/archivo-expanded-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
 
 :root {
   --primary: #04013f;
   --lavender: #b54fd8;
   --white: #ffffff;
+  --light-gray: #f9f9f1;
   --light-grey: #f0f0f0;
-  --dark-text: #04013f;
-  --para-text: #636363;
-  --font-main: 'Work Sans', 'Lato', sans-serif;
-  --font-heading: 'Archivo', 'Work Sans', sans-serif;
+  --black: #04013f;
+  --gray-paragraph: #636363;
 }
 
 html { scroll-behavior: smooth; }
@@ -18,39 +46,171 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-main);
-  color: var(--dark-text);
-  background: #fff;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.1em;
+  letter-spacing: -0.5px;
+  color: var(--primary);
+  background: var(--light-gray);
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  margin: 0 0 16px;
-  line-height: 1.15;
+h1 {
+  color: var(--primary);
+  letter-spacing: -1.9px;
+  margin: 0;
+  font-family: 'Archivo Expanded', Times New Roman, sans-serif;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.1em;
+}
+h2 {
+  color: var(--primary);
+  letter-spacing: -0.5px;
+  margin: 0;
+  font-family: 'Archivo Expanded', Times New Roman, sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+h3 {
+  color: var(--primary);
+  letter-spacing: -1.2px;
+  margin: 0;
+  font-family: 'Archivo Expanded', Times New Roman, sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.1em;
+}
+h4 {
+  color: var(--primary);
+  letter-spacing: -0.8px;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+h5 {
+  color: var(--primary);
+  letter-spacing: -0.8px;
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2em;
 }
 
-p { margin: 0 0 16px; line-height: 1.7; }
+p { margin: 0 0 10px; }
+
+.paragraph {
+  color: var(--black);
+  letter-spacing: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.paragraph.white { color: var(--light-gray); }
+
 a { text-decoration: none; }
 img { max-width: 100%; display: block; }
 
-/* Text link CTA */
+/* Base container */
+.base-container {
+  max-width: 1330px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Sections */
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  overflow: hidden;
+}
+.section.navy-dark-blue {
+  background-color: var(--primary);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.section.light-grey { background-color: #f0f0f0; }
+.section.dark-background { background-color: var(--primary); }
+.section.white-bg { background-color: #fff; }
+.section.cta-section {
+  background-image: url('/assets/cta-bg.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Inner banner */
+.section.inner-banner {
+  background-color: var(--primary);
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: 400px;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+.inner-banner h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--lavender);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.4;
+}
+.inner-banner h2 {
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 400;
+  color: #fff;
+  max-width: 780px;
+  letter-spacing: -1px;
+  line-height: 1.1em;
+  font-family: 'Archivo Expanded', sans-serif;
+}
+.inner-banner p {
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  margin-top: 20px;
+  max-width: 700px;
+  line-height: 1.6em;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 0;
+}
+
+/* Spacers */
+.spacer-small { height: 20px; }
+.spacer-m { height: 40px; }
+.spacer-xsmall { height: 10px; }
+
+/* Text link */
 .text-link {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-main);
+  font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   font-weight: 600;
   color: var(--primary);
-  border: none;
-  background: none;
   padding: 5px 0;
   cursor: pointer;
   transition: color 0.25s;
+  text-decoration: none;
+  letter-spacing: -0.3px;
 }
 .text-link:hover { color: var(--lavender); }
-.text-link img { width: 18px; height: 18px; }
+.text-link img { width: 18px; height: 18px; display: inline; }
 
 /* Pill button */
 .pill-btn {
@@ -62,7 +222,7 @@ img { max-width: 100%; display: block; }
   color: var(--white);
   border-radius: 48px;
   padding: 14px 28px;
-  font-family: var(--font-main);
+  font-family: 'Work Sans', sans-serif;
   font-size: 15px;
   font-weight: 600;
   letter-spacing: -0.3px;
@@ -70,85 +230,19 @@ img { max-width: 100%; display: block; }
   transition: all 0.3s;
   text-decoration: none;
 }
-.pill-btn:hover {
-  background: transparent;
-  color: var(--lavender);
-}
-.pill-btn img { width: 18px; height: 18px; }
-
-/* Section shared */
-.section {
-  padding: 80px 20px;
-}
-.section-navy {
-  background: var(--primary);
-  color: var(--white);
-  padding: 80px 20px;
-}
-.section-grey {
-  background: var(--light-grey);
-  padding: 80px 20px;
-}
-.section-white {
-  background: #fff;
-  padding: 80px 20px;
-}
-
-/* Inner banner (sub-pages) */
-.inner-banner {
-  background: var(--primary);
-  padding: 140px 20px 80px;
-  color: var(--white);
-}
-.inner-banner h1 {
-  font-size: clamp(14px, 2vw, 18px);
-  font-weight: 500;
-  color: var(--lavender);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 16px;
-}
-.inner-banner h2 {
-  font-size: clamp(28px, 4vw, 52px);
-  font-weight: 400;
-  color: var(--white);
-  max-width: 780px;
-}
-
-.base-container {
-  max-width: 1330px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-/* Two-col layout */
-.two-col {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-.two-col.reverse { flex-direction: row-reverse; }
-.two-col-text { flex: 1; }
-.two-col-image { flex: 1; }
-.two-col-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 4px;
-}
+.pill-btn:hover { background: transparent; color: var(--lavender); }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .two-col, .two-col.reverse {
-    flex-direction: column;
-  }
-  .two-col-image img { height: 280px; }
-  .base-container { padding: 0 20px; }
-  .section, .section-navy, .section-grey, .section-white { padding: 60px 20px; }
-  .inner-banner { padding: 120px 20px 60px; }
+@media (max-width: 991px) {
+  h1 { font-size: 42px; }
+  h2 { font-size: 34px; }
+  .paragraph { font-size: 20px; }
 }
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+@media (max-width: 767px) {
+  h1 { font-size: 32px; letter-spacing: -1px; }
+  h2 { font-size: 26px; }
+  .paragraph { font-size: 18px; line-height: 1.4em; }
+  .section { padding-top: 60px; padding-bottom: 60px; }
+  .section.inner-banner { padding-top: 140px; padding-bottom: 30px; }
+  .inner-banner h2 { font-size: 26px; }
 }

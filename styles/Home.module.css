@@ -9,13 +9,10 @@
 }
 .heroVideo {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto;
   object-fit: cover;
   z-index: 0;
 }
@@ -26,17 +23,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom, rgba(4,1,63,0.1) 0%, rgba(4,1,63,0.5) 100%);
+  background: linear-gradient(180deg, rgba(4,1,63,0.05) 0%, rgba(4,1,63,0.45) 100%);
 }
 .heroWords {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  text-align: center;
+  gap: 4px;
 }
 .heroWord {
-  max-width: min(500px, 80vw);
+  max-width: min(520px, 75vw);
   height: auto;
   opacity: 0;
 }
@@ -44,49 +40,74 @@
 .word2 { animation: fadeIn 1.5s ease forwards 1.0s; }
 .word3 { animation: fadeIn 1.5s ease forwards 1.5s; }
 .word4 { animation: fadeIn 1.5s ease forwards 2.0s; }
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
+@keyframes fadeIn { to { opacity: 1; } }
 
-/* Intro */
-.introText {
-  max-width: 900px;
-}
+/* Navy intro */
+.introWrap { max-width: 900px; }
 .introHeading {
-  font-family: 'Archivo', sans-serif;
-  font-size: clamp(32px, 5vw, 58px);
-  font-weight: 400;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
   color: #fff;
   margin-bottom: 24px;
-  letter-spacing: -0.5px;
+  letter-spacing: -1.5px;
+  line-height: 1.1em;
 }
 .introPara {
-  font-family: 'Work Sans', sans-serif;
   font-size: clamp(16px, 2vw, 20px);
-  font-weight: 300;
-  color: rgba(255,255,255,0.9);
-  line-height: 1.7;
   max-width: 720px;
 }
 
-/* Section headings */
+/* Section heading (dark on light) */
 .sectionHeading {
-  font-family: 'Archivo', sans-serif;
-  font-size: clamp(26px, 3.5vw, 44px);
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(24px, 3vw, 44px);
   font-weight: 600;
   color: #04013f;
-  margin-bottom: 24px;
-  letter-spacing: -0.5px;
-  line-height: 1.15;
+  letter-spacing: -1.5px;
+  line-height: 1.1em;
+  margin-bottom: 0;
 }
 
+/* Testimonials layout — image absolute, text % width */
+.testimonialSection { min-height: 500px; }
+.halfImage {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+.imageLeft { left: 0; }
+.imageRight {
+  right: 0;
+  object-position: 50% 50%;
+  width: 45%;
+}
+
+/* Text content — right side (image left) */
+.testimonialContent {
+  width: 65%;
+  margin-left: auto;
+  padding-left: 40px;
+}
+/* Text content — left side (image right) */
+.testimonialLeft {
+  width: 55%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 80px;
+}
+.testimonialTitle { width: 89%; }
+
 /* UDG Advantage */
+.advantageWrap { width: 100%; }
+.advantageTitleWrap { max-width: 550px; margin-bottom: 60px; }
 .advantageTitle {
-  font-family: 'Archivo', sans-serif;
-  font-size: clamp(28px, 4vw, 40px);
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(28px, 3.5vw, 40px);
   font-weight: 700;
   color: #fff;
-  margin-bottom: 60px;
   letter-spacing: -0.5px;
 }
 .advantageGrid {
@@ -111,23 +132,41 @@
   flex-shrink: 0;
 }
 .iconImg { width: 24px; height: 24px; }
+.iconText { flex: 1; }
 .cardTitle {
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Archivo Expanded', sans-serif;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   color: #fff;
+  letter-spacing: 0;
   margin-bottom: 10px;
 }
 .cardText {
   font-family: 'Work Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 300;
   color: rgba(255,255,255,0.85);
   line-height: 1.65;
   margin: 0;
+  letter-spacing: 0;
 }
 
-@media (max-width: 768px) {
-  .advantageGrid { grid-template-columns: 1fr; gap: 28px; }
+@media (max-width: 991px) {
+  .testimonialSection { min-height: 400px; }
+  .testimonialContent { width: 60%; }
+  .testimonialLeft { width: 60%; padding-right: 40px; }
+  .halfImage { width: 40%; }
+  .imageRight { width: 40%; }
+}
+@media (max-width: 767px) {
+  .halfImage, .imageRight { display: none; }
+  .testimonialContent, .testimonialLeft {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .testimonialSection { min-height: auto; }
   .hero { height: 60vh; min-height: 400px; }
+  .advantageGrid { grid-template-columns: 1fr; gap: 28px; }
 }
