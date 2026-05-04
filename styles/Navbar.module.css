@@ -16,8 +16,8 @@
 .container {
   background-color: transparent;
   border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   width: 1300px;
   max-width: 1330px;
@@ -29,11 +29,12 @@
   height: 70px;
 }
 .logo { display: flex; align-items: center; }
-.logoImg { height: 42px; width: auto; }
+.logoImg { height: 60px; width: auto; }
 
 .navLinks {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0;
 }
 .navLink {

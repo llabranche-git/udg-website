@@ -40,7 +40,7 @@ export default function Navbar() {
             What We Do
           </Link>
           <Link href="/udb" className={`${styles.navLink} ${router.pathname.startsWith('/udb') ? styles.active : ''}`}>
-            UDB
+            Unified Digital Banking
           </Link>
           <Link href="/contact-us" className={styles.ctaBtn}>
             <span>Contact Us</span>
