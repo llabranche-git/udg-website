@@ -9,6 +9,7 @@ export default function UDBMarkets() {
       <Head><title>UDB — Markets</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-markets.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Markets</span>

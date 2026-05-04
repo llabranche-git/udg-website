@@ -9,6 +9,7 @@ export default function UDBPlatform() {
       <Head><title>UDB Platform — Full-Stack Digital Banking Infrastructure</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-platform.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Platform</span>

@@ -9,6 +9,7 @@ export default function UDBOwnership() {
       <Head><title>UDB — Your Ownership</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-ownership.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Your Ownership</span>

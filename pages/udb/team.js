@@ -9,6 +9,7 @@ export default function UDBTeam() {
       <Head><title>UDB — The Team</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-platform.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Team</span>

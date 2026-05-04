@@ -9,6 +9,7 @@ export default function UDBPartners() {
       <Head><title>UDB — Partner Ecosystem</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-partners.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Partner Ecosystem</span>

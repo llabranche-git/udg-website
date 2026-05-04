@@ -9,6 +9,7 @@ export default function UDBHowItWorks() {
       <Head><title>UDB — How It Works</title></Head>
 
       <section className={styles.innerBanner}>
+        <img src="/assets/udb-how-it-works.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
         <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Process</span>
