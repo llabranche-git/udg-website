@@ -1,0 +1,147 @@
+.sectionTitle {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  color: #0A1628;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.sectionTitleLight {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+.sectionLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #7B3FE4;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+.sectionLabelLight {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #C084FC;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+.body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: #334155;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 860px;
+}
+.bodyLight {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.7;
+  margin-bottom: 20px;
+  max-width: 860px;
+}
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+.grid4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+  margin-top: 40px;
+}
+.teamCard {
+  background: #fff;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+.teamName {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0A1628;
+  margin-bottom: 4px;
+}
+.teamRole {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7B3FE4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.teamBio {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #475569;
+  line-height: 1.65;
+}
+.darkCard {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 32px 28px;
+}
+.darkCardTitle {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.darkCardText {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.65;
+}
+.statsRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+  text-align: center;
+}
+.statNumber {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  color: #0A1628;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.statLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  color: #64748B;
+  line-height: 1.4;
+}
+@media (max-width: 991px) {
+  .grid3 { grid-template-columns: repeat(2, 1fr); }
+  .grid4 { grid-template-columns: repeat(2, 1fr); }
+  .statsRow { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .grid3, .grid4, .statsRow { grid-template-columns: 1fr; }
+}

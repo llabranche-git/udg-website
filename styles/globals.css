@@ -247,6 +247,11 @@ img { max-width: 100%; display: block; }
   .inner-banner h2 { font-size: 26px; }
 }
 
+
+/* Section background helpers */
+.section-grey { background-color: #f5f5f7; }
+.section-white { background-color: #ffffff; }
+
 /* Hero word fade-in animations — global scope to avoid CSS module keyframe mangling */
 @keyframes heroWordFadeIn {
   from { opacity: 0; }

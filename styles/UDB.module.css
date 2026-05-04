@@ -107,9 +107,86 @@
 
 /* ─── Footer ─────────────────────────────────────────────────────────────── */
 .udbFooter {
-  background: #0A1628;
-  padding: 40px;
-  text-align: center;
+  background: #060E1F;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.udbFooterInner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 64px 40px 48px;
+  display: grid;
+  grid-template-columns: 1.4fr 2fr;
+  gap: 64px;
+  align-items: start;
+}
+.udbFooterBrand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.udbFooterWordmark {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.3px;
+}
+.udbFooterTagline {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.6;
+  max-width: 280px;
+  margin: 0;
+}
+.udbFooterParent {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--udb-blue);
+  text-decoration: none;
+}
+.udbFooterParent:hover { text-decoration: underline; }
+.udbFooterCols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.udbFooterCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.udbFooterColHeading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+.udbFooterLink {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.udbFooterLink:hover { color: #fff; }
+.udbFooterBottom {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.udbFooterCopy {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+  margin: 0;
 }
 .udbFooterText {
   font-family: 'Work Sans', sans-serif;

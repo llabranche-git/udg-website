@@ -39,6 +39,9 @@ export default function Navbar() {
           <Link href="/what-we-do" className={`${styles.navLink} ${router.pathname === '/what-we-do' ? styles.active : ''}`}>
             What We Do
           </Link>
+          <Link href="/team" className={`${styles.navLink} ${router.pathname === '/team' ? styles.active : ''}`}>
+            Team
+          </Link>
           <Link href="/udb" className={`${styles.navLink} ${router.pathname.startsWith('/udb') ? styles.active : ''}`}>
             Unified Digital Banking
           </Link>

@@ -23,11 +23,8 @@ function UDBNavbar() {
     { href: '/udb', label: 'Overview' },
     { href: '/udb/platform', label: 'Platform' },
     { href: '/udb/how-it-works', label: 'How It Works' },
-    { href: '/udb/markets', label: 'Markets' },
     { href: '/udb/security', label: 'Security & Compliance' },
     { href: '/udb/ownership', label: 'Your Ownership' },
-    { href: '/udb/partners', label: 'Partners' },
-    { href: '/udb/team', label: 'Team' },
   ]
 
   return (
@@ -47,8 +44,8 @@ function UDBNavbar() {
               {label}
             </Link>
           ))}
-          <Link href="/udb/apply" className={`${styles.udbNavLink} ${styles.udbNavCta}`}>
-            Apply
+          <Link href="/udb/portal" className={`${styles.udbNavLink} ${styles.udbNavCta}`}>
+            Client Portal
           </Link>
         </div>
 
@@ -63,13 +60,43 @@ function UDBNavbar() {
 function UDBFooter() {
   return (
     <footer className={styles.udbFooter}>
-      <p className={styles.udbFooterText}>
-        Unified Digital Banking (UDB) is a subsidiary of{' '}
-        <a href="https://www.unifieddigitalgroup.com" target="_blank" rel="noopener noreferrer">
-          Unified Digital Group
-        </a>
-        . All rights reserved. &copy; {new Date().getFullYear()}
-      </p>
+      <div className={styles.udbFooterInner}>
+        <div className={styles.udbFooterBrand}>
+          <div className={styles.udbFooterWordmark}>Unified Digital Banking</div>
+          <p className={styles.udbFooterTagline}>A complete banking ecosystem for principal families and sovereign institutions in emerging markets.</p>
+          <a href="https://www.unifieddigitalgroup.com" target="_blank" rel="noopener noreferrer" className={styles.udbFooterParent}>
+            A Unified Digital Group Company
+          </a>
+        </div>
+        <div className={styles.udbFooterCols}>
+          <div className={styles.udbFooterCol}>
+            <div className={styles.udbFooterColHeading}>The Platform</div>
+            <Link href="/udb" className={styles.udbFooterLink}>Overview</Link>
+            <Link href="/udb/platform" className={styles.udbFooterLink}>Platform</Link>
+            <Link href="/udb/how-it-works" className={styles.udbFooterLink}>How It Works</Link>
+            <Link href="/udb/security" className={styles.udbFooterLink}>Security &amp; Compliance</Link>
+            <Link href="/udb/partners" className={styles.udbFooterLink}>Technology Partners</Link>
+          </div>
+          <div className={styles.udbFooterCol}>
+            <div className={styles.udbFooterColHeading}>Ownership</div>
+            <Link href="/udb/ownership" className={styles.udbFooterLink}>Your Ownership</Link>
+            <Link href="/udb/markets" className={styles.udbFooterLink}>Target Markets</Link>
+            <Link href="/udb/apply" className={styles.udbFooterLink}>Apply</Link>
+            <Link href="/udb/portal" className={styles.udbFooterLink}>Client Portal</Link>
+          </div>
+          <div className={styles.udbFooterCol}>
+            <div className={styles.udbFooterColHeading}>Unified Digital Group</div>
+            <a href="/who-we-are" className={styles.udbFooterLink}>Who We Are</a>
+            <a href="/who-we-serve" className={styles.udbFooterLink}>Who We Serve</a>
+            <a href="/what-we-do" className={styles.udbFooterLink}>What We Do</a>
+            <a href="/team" className={styles.udbFooterLink}>The Team</a>
+            <a href="/contact-us" className={styles.udbFooterLink}>Contact Us</a>
+          </div>
+        </div>
+      </div>
+      <div className={styles.udbFooterBottom}>
+        <p className={styles.udbFooterCopy}>&copy; {new Date().getFullYear()} Unified Digital Banking. All rights reserved.</p>
+      </div>
     </footer>
   )
 }
