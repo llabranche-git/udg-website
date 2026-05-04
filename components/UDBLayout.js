@@ -24,6 +24,7 @@ function UDBNavbar() {
     { href: '/udb/platform', label: 'Platform' },
     { href: '/udb/how-it-works', label: 'How It Works' },
     { href: '/udb/markets', label: 'Markets' },
+    { href: '/udb/security', label: 'Security & Compliance' },
     { href: '/udb/ownership', label: 'Your Ownership' },
     { href: '/udb/partners', label: 'Partners' },
     { href: '/udb/team', label: 'Team' },

@@ -69,11 +69,11 @@ export default function UDBOverview() {
         </div>
       </section>
 
-      {/* Bank in a Box */}
+      {/* Complete Banking Ecosystem */}
       <section className={styles.udbSection}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Platform</span>
-          <h2 className={styles.sectionHeading}>A Complete Bank-in-a-Box Ecosystem</h2>
+          <h2 className={styles.sectionHeading}>A Complete Banking Ecosystem</h2>
           <p className={styles.sectionSubtext}>A comprehensive, fully managed solution engineered specifically for organizations launching sophisticated banking services without prior banking experience. UDB delivers the full stack — and manages it for the life of your partnership.</p>
           <div className={styles.cardGrid2}>
             <div className={styles.card}>

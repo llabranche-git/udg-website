@@ -66,8 +66,8 @@ export default function UDBPlatform() {
               <div className={styles.cardText}>Africa's largest stablecoin infrastructure is embedded at the core of every UDB bank. 50+ local payment currencies, 30+ blockchain integrations, $6B+ in processed transaction volume. The infrastructure is proven — UDB brings it directly into your banking platform from day one, with no integration overhead.</div>
             </div>
             <div className={styles.card}>
-              <div className={styles.cardTitle}>The Compliance Defense Stack</div>
-              <div className={styles.cardText}>Every stablecoin transaction runs through strict AML, Sanctions Screening, Anti-Terrorism checks, and FATF Travel Rule compliance — natively, in the background. Regulators see a fully compliant institution. Your customers see a frictionless experience. Your bank sees no exposure.</div>
+              <div className={styles.cardTitle}>Compliance Built Into Every Transaction</div>
+              <div className={styles.cardText}>Every stablecoin transaction runs through strict AML, Sanctions Screening, Anti-Terrorism checks, and FATF Travel Rule compliance — natively, in the background. Regulators see a fully compliant institution. Your customers see a frictionless experience. <a href="/udb/security" style={{color:'var(--udb-blue)', fontWeight:600}}>Full security &amp; compliance architecture →</a></div>
             </div>
           </div>
         </div>
@@ -107,32 +107,7 @@ export default function UDBPlatform() {
         </div>
       </section>
 
-      {/* Compliance */}
-      <section className={`${styles.udbSection} ${styles.darkSection}`}>
-        <div className={styles.udbContainer}>
-          <span className={styles.sectionLabel}>Compliance Architecture</span>
-          <h2 className={styles.sectionHeading}>The Unified Advantage: One Framework, Global Reach</h2>
-          <p className={styles.sectionSubtext}>Beyond technology, UDB maps functional and organizational requirements to ensure you operate at scale without regulatory friction.</p>
-          <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
-            <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>112 Standards, 80+ Unified Controls</div>
-              <div className={styles.cardText}>Aggregating 13+ compliance frameworks into one high-performance architecture. The Common Control Framework (CCF) eliminates the fragmentation that makes conventional compliance so costly.</div>
-            </div>
-            <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>"Design Once, Comply to Many"</div>
-              <div className={styles.cardText}>A single implementation satisfies overlapping Nigerian, EU, and international banking requirements simultaneously — so you expand into new markets without rebuilding your compliance stack.</div>
-            </div>
-            <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>Real-Time Posture &amp; Audit Readiness</div>
-              <div className={styles.cardText}>Real-time visibility into security posture ensures zero gaps during institutional due diligence. When a regulator or correspondent bank asks, you have the answer before they finish the question.</div>
-            </div>
-            <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>Tier-1 International Certifications</div>
-              <div className={styles.cardText}>Fully aligned with ISO 27001:2022, PCI-USS v4.0.1, and SGC 2 Type 2. Advanced AML programs featuring real-time transaction monitoring and FATF Travel Rule compliance. Built to EU AI Act and NIST AI PMF standards.</div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Operations */}
       <section className={styles.udbSection}>
