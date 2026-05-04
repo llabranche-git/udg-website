@@ -6,7 +6,7 @@ import styles from '../../styles/UDB.module.css'
 export default function UDBPartners() {
   return (
     <UDBLayout>
-      <Head><title>UDB — Partner Ecosystem</title></Head>
+      <Head><title>Unified Digital Banking — Partner Ecosystem</title></Head>
 
       <section className={styles.innerBanner}>
         <img src="/assets/udb-partners.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />

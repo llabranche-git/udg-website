@@ -6,7 +6,7 @@ import styles from '../../styles/UDB.module.css'
 export default function UDBMarkets() {
   return (
     <UDBLayout>
-      <Head><title>UDB — Markets</title></Head>
+      <Head><title>Unified Digital Banking — Markets</title></Head>
 
       <section className={styles.innerBanner}>
         <img src="/assets/udb-markets.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />

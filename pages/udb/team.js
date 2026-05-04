@@ -6,7 +6,7 @@ import styles from '../../styles/UDB.module.css'
 export default function UDBTeam() {
   return (
     <UDBLayout>
-      <Head><title>UDB — The Team</title></Head>
+      <Head><title>Unified Digital Banking — The Team</title></Head>
 
       <section className={styles.innerBanner}>
         <img src="/assets/udb-platform.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />

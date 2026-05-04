@@ -6,7 +6,7 @@ import styles from '../../styles/UDB.module.css'
 export default function UDBHowItWorks() {
   return (
     <UDBLayout>
-      <Head><title>UDB — How It Works</title></Head>
+      <Head><title>Unified Digital Banking — How It Works</title></Head>
 
       <section className={styles.innerBanner}>
         <img src="/assets/udb-how-it-works.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />

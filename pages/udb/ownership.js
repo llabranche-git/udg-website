@@ -6,7 +6,7 @@ import styles from '../../styles/UDB.module.css'
 export default function UDBOwnership() {
   return (
     <UDBLayout>
-      <Head><title>UDB — Your Ownership</title></Head>
+      <Head><title>Unified Digital Banking — Your Ownership</title></Head>
 
       <section className={styles.innerBanner}>
         <img src="/assets/udb-ownership.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />

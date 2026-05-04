@@ -7,7 +7,7 @@ export default function PortalDashboard() {
   return (
     <>
       <Head>
-        <title>Dashboard | UDB Partner Portal</title>
+        <title>Dashboard | Unified Digital Banking Partner Portal</title>
       </Head>
       <div className={styles.dashWrapper}>
         <aside className={styles.dashSidebar}>
