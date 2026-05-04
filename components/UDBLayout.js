@@ -24,7 +24,7 @@ function UDBNavbar() {
     { href: '/udb/platform', label: 'Platform' },
     { href: '/udb/how-it-works', label: 'How It Works' },
     { href: '/udb/markets', label: 'Markets' },
-    { href: '/udb/economics', label: 'Economics' },
+    { href: '/udb/ownership', label: 'Your Ownership' },
     { href: '/udb/partners', label: 'Partners' },
     { href: '/udb/team', label: 'Team' },
   ]
@@ -33,8 +33,7 @@ function UDBNavbar() {
     <nav className={`${styles.udbNav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.udbNavInner}>
         <Link href="/udb" className={styles.udbWordmark}>
-          <span className={styles.udbWordmarkMain}>UDB</span>
-          <span className={styles.udbWordmarkSub}>by Unified Digital Group</span>
+          <span className={styles.udbWordmarkMain}>Unified Digital Banking</span>
         </Link>
 
         <div className={`${styles.udbNavLinks} ${menuOpen ? styles.open : ''}`}>

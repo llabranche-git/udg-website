@@ -1,100 +1,164 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import UDBLayout from '../../components/UDBLayout'
 import styles from '../../styles/UDB.module.css'
 
-const capabilities = [
-  { icon: '🏦', title: 'Core Banking Engine', text: 'Account management, general ledger, transaction processing, multi-currency support, and full audit trail. Built on modern cloud-native architecture.' },
-  { icon: '📱', title: 'Digital Channels', text: 'White-labeled mobile and web banking applications. Full-featured customer experience with your brand, your identity.' },
-  { icon: '💳', title: 'Payments Infrastructure', text: 'Domestic and cross-border payments, SWIFT connectivity, local clearing systems integration, and real-time transaction processing.' },
-  { icon: '🔒', title: 'KYC / AML & Compliance', text: 'Automated customer onboarding, identity verification, risk scoring, AML screening, and regulatory reporting tailored to each market.' },
-  { icon: '📊', title: 'Data & Analytics', text: 'Real-time dashboards, management information systems, business intelligence, and performance reporting for bank leadership.' },
-  { icon: '☁️', title: 'Cloud Infrastructure', text: 'AWS-hosted, multi-region deployment. 99.9% uptime SLA. Business continuity plan and disaster recovery built in from day one.' },
-]
-
-export default function Platform() {
+export default function UDBPlatform() {
   return (
-    <UDBLayout title="The UDB Platform | Unified Digital Banking" description="A cloud-native core banking stack deployed and managed end-to-end by UDB.">
-      <div className={styles.innerBanner}>
-        <div className={styles.udbContainer} style={{width:'100%'}}>
-          <p className={styles.bannerLabel}>The Platform</p>
-          <h1 className={styles.bannerHeading}>Built for Banking. Designed for Scale.</h1>
-          <p className={styles.bannerSub}>A cloud-native core banking stack deployed and managed end-to-end by UDB.</p>
-        </div>
-      </div>
+    <UDBLayout>
+      <Head><title>UDB Platform — Full-Stack Digital Banking Infrastructure</title></Head>
 
-      {/* Capabilities */}
-      <section className={`${styles.udbSection} ${styles.gridBg}`}>
+      <section className={styles.innerBanner}>
+        <div className={styles.gridBg} />
         <div className={styles.udbContainer}>
-          <p className={styles.sectionLabel}>Platform Architecture</p>
-          <h2 className={styles.sectionHeading}>Six Core Capabilities</h2>
-          <p className={styles.sectionSubtext}>Every UDB deployment includes the full platform stack. No partial deployments. No missing modules. The complete infrastructure for a modern digital bank.</p>
-          <div className={styles.cardGrid3}>
-            {capabilities.map(({ icon, title, text }) => (
-              <div key={title} className={styles.card}>
-                <div className={styles.cardIcon}>{icon}</div>
-                <h3 className={styles.cardTitle}>{title}</h3>
-                <p className={styles.cardText}>{text}</p>
-              </div>
-            ))}
-          </div>
+          <span className={styles.sectionLabel}>The Platform</span>
+          <h1 className={styles.bannerHeading}>Full-Stack Banking Infrastructure,<br />Fully Managed</h1>
+          <p className={styles.bannerSub}>Built by a powerhouse of talent from UDG, AWS, Slalom, Qucoon, and Deloitte. Over 200 years of combined experience delivering mission-critical solutions for the Federal Reserve, Royal Bank of Canada, Discover Financial Services, and the Central Bank of Nigeria.</p>
         </div>
       </section>
 
-      {/* Managed Service */}
-      <section className={styles.altSection}>
+      {/* Core Capabilities */}
+      <section className={styles.udbSection}>
         <div className={styles.udbContainer}>
-          <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'80px', alignItems:'center'}}>
-            <div>
-              <p className={styles.sectionLabel}>Managed Service</p>
-              <h2 className={styles.sectionHeading}>You Own the Bank. We Run the Platform.</h2>
-              <p className={styles.sectionSubtext}>UDB operates as your technology partner for the life of the relationship. We handle everything so you don't have to build an internal technology team.</p>
-              <ul style={{listStyle:'none', padding:0, margin:0, display:'flex', flexDirection:'column', gap:'16px'}}>
-                {['Business continuity plan (BCP) and disaster recovery (DR)','Change management and platform updates','Regulatory audit support and documentation','24/7 escalation path for critical incidents','Annual security penetration testing','SLA monitoring and reporting'].map(item => (
-                  <li key={item} style={{display:'flex', alignItems:'flex-start', gap:'12px', fontFamily:"'Work Sans', sans-serif", fontSize:'15px', fontWeight:300, color:'#334155', lineHeight:1.6}}>
-                    <span style={{color:'#1A6FDB', fontWeight:700, flexShrink:0}}>✓</span>{item}
-                  </li>
-                ))}
-              </ul>
+          <span className={styles.sectionLabel}>Core Capabilities</span>
+          <h2 className={styles.sectionHeading}>Scalable, AI-Enabled, Built to Perform</h2>
+          <div className={styles.cardGrid3}>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Scalable &amp; AI-Enabled</div>
+              <div className={styles.cardText}>Standardized patterns accelerating feature delivery. Shared AI context prevents errors, drives operational velocity, and personalizes every customer interaction at scale.</div>
             </div>
-            <div className={styles.card} style={{padding:'48px'}}>
-              <p className={styles.sectionLabel}>SLA Commitment</p>
-              <div style={{display:'flex', flexDirection:'column', gap:'24px'}}>
-                {[['99.9%', 'Platform Uptime (monthly)'],['≤ 4hrs', 'Recovery Time Objective (RTO)'],['≤ 1hr', 'Recovery Point Objective (RPO)'],['24/7', 'Critical Incident Escalation']].map(([val, label]) => (
-                  <div key={label}>
-                    <div style={{fontFamily:"'Archivo Expanded', sans-serif", fontSize:'32px', fontWeight:700, color:'#1A6FDB', letterSpacing:'-1px', lineHeight:1}}>{val}</div>
-                    <div style={{fontFamily:"'Work Sans', sans-serif", fontSize:'13px', color:'#64748B', marginTop:'4px'}}>{label}</div>
-                  </div>
-                ))}
-              </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Performant by Design</div>
+              <div className={styles.cardText}>Hub-and-spoke data architecture built to support hundreds of millions of users efficiently and unlock real-time revenue-generating analytics across your entire portfolio.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Quality Engineering</div>
+              <div className={styles.cardText}>World-class quality by design lowers risk, strengthens compliance, and ensures predictable growth without the costly production failures that derail conventional banking deployments.</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Integration */}
-      <section className={styles.darkSection}>
+      {/* Financial Rails */}
+      <section className={`${styles.udbSection} ${styles.altSection}`}>
         <div className={styles.udbContainer}>
-          <p className={styles.sectionLabel} style={{color:'#60A5FA'}}>Open Architecture</p>
-          <h2 className={styles.sectionHeading} style={{color:'#fff'}}>Connects to Your Ecosystem</h2>
-          <p className={styles.sectionSubtext} style={{color:'rgba(255,255,255,0.65)'}}>Open API architecture integrates with local payment rails, existing family business systems, regulatory reporting portals, and third-party services — without lock-in.</p>
-          <div className={styles.cardGrid3}>
-            {[['Local Payment Rails', 'Integration with domestic interbank payment systems, mobile money networks, and central bank payment infrastructure.'],['Family Business Systems', 'API connectivity to the family\'s existing business operations — supply chains, real estate, energy assets, and more.'],['Regulatory Portals', 'Direct integration with central bank reporting portals, financial intelligence units, and tax authority systems.']].map(([title, text]) => (
-              <div key={title} className={styles.darkCard}>
-                <h3 className={styles.cardTitle}>{title}</h3>
-                <p className={styles.cardText}>{text}</p>
-              </div>
-            ))}
+          <span className={styles.sectionLabel}>Financial Infrastructure</span>
+          <h2 className={styles.sectionHeading}>Next-Generation Financial Rails:<br />Invisible, Borderless Liquidity</h2>
+          <p className={styles.sectionSubtext}>Behind every simple tap lies enterprise-grade compliance built for the world's most complex markets.</p>
+          <div className={styles.cardGrid3} style={{marginTop:'40px'}}>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>AWS Global Backbone</div>
+              <div className={styles.cardText}>Unmatched global scale for high availability, robust SOC and PCI security, and continuous infrastructure innovation — the same backbone that powers the world's largest financial institutions.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Yellow Card Integration</div>
+              <div className={styles.cardText}>Seamless connection to a $6B+ processed volume stablecoin engine supporting 50+ local payment currencies and 30+ blockchains. Local fiat in, global fiat out — instantly.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>The Defense Stack</div>
+              <div className={styles.cardText}>Strict AML, Sanctions Screening, Anti-Terrorism checks, and FATF Travel Rule compliance executed natively in the background — invisible to your customers, unavoidable for regulators.</div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.ctaSection}>
+      {/* UX & KYC */}
+      <section className={styles.udbSection}>
         <div className={styles.udbContainer}>
-          <h2 className={styles.ctaHeading}>See the Platform in Action</h2>
-          <p className={styles.ctaSubtext}>Schedule a briefing with the UDB team to walk through the full platform architecture and deployment model.</p>
-          <Link href="/udb/apply" className={styles.btnPrimary}>Request a Briefing</Link>
+          <span className={styles.sectionLabel}>Customer Experience</span>
+          <h2 className={styles.sectionHeading}>Where Sovereign Infrastructure Meets Frictionless UX</h2>
+          <div className={styles.cardGrid2}>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Instant Identity Verification</div>
+              <div className={styles.cardText}>Frictionless onboarding with immediate cross-referencing of government IDs — BVN, NIN, national ID — to establish progressive KYC tiers instantly. Customers are verified before they leave the onboarding screen.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Enterprise-Grade Biometric Trust</div>
+              <div className={styles.cardText}>Native integration with device-level security protocols out-of-the-box — Face ID, fingerprint, behavioral biometrics — ensuring regulatory compliance and immediate consumer confidence.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Social Financial Transactions</div>
+              <div className={styles.cardText}>Integrated chat and finance features allow users to connect with their community and manage money securely in a single, unified interface — driving adoption through the networks your customers already use.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Deep Local Integration</div>
+              <div className={styles.cardText}>Deeply localized merchant APIs allow users to effortlessly settle bills — airtime, electricity, data, transport — within their existing economic ecosystems. The bank becomes the utility layer of daily life.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Precision Credit</div>
+              <div className={styles.cardText}>Granular, sector-based profiling dynamically adjusts risk profiles per customer. Absolute transparency on automated repayment schedules severely reduces default rates — a structural advantage over conventional microfinance.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Multi-Language at Scale</div>
+              <div className={styles.cardText}>Lara AI embeds professional, AI-driven translation directly into the core platform — 200+ languages with human-in-the-loop review, breaking down adoption barriers across Asia, Africa, LATAM, and the GCC.</div>
+            </div>
+          </div>
         </div>
       </section>
+
+      {/* Compliance */}
+      <section className={`${styles.udbSection} ${styles.darkSection}`}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>Compliance Architecture</span>
+          <h2 className={styles.sectionHeading}>The Unified Advantage: One Framework, Global Reach</h2>
+          <p className={styles.sectionSubtext}>Beyond technology, UDB maps functional and organizational requirements to ensure you operate at scale without regulatory friction.</p>
+          <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>112 Standards, 80+ Unified Controls</div>
+              <div className={styles.cardText}>Aggregating 13+ compliance frameworks into one high-performance architecture. The Common Control Framework (CCF) eliminates the fragmentation that makes conventional compliance so costly.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>"Design Once, Comply to Many"</div>
+              <div className={styles.cardText}>A single implementation satisfies overlapping Nigerian, EU, and international banking requirements simultaneously — so you expand into new markets without rebuilding your compliance stack.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>Real-Time Posture &amp; Audit Readiness</div>
+              <div className={styles.cardText}>Real-time visibility into security posture ensures zero gaps during institutional due diligence. When a regulator or correspondent bank asks, you have the answer before they finish the question.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>Tier-1 International Certifications</div>
+              <div className={styles.cardText}>Fully aligned with ISO 27001:2022, PCI-USS v4.0.1, and SGC 2 Type 2. Advanced AML programs featuring real-time transaction monitoring and FATF Travel Rule compliance. Built to EU AI Act and NIST AI PMF standards.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Operations */}
+      <section className={styles.udbSection}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>Managed Operations</span>
+          <h2 className={styles.sectionHeading}>Information Security &amp; Operations as a Growth Enabler</h2>
+          <p className={styles.sectionSubtext}>UDB manages functional and organizational requirements so you operate at scale without operational drag.</p>
+          <div className={styles.cardGrid2}>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Compliant Access Architecture</div>
+              <div className={styles.cardText}>Centralized identity architecture preventing security breaches at the infrastructure layer — before they can reach your customers or your regulators.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Regulatory Readiness</div>
+              <div className={styles.cardText}>Compliant organizational structure mapping to prepare for commercial banking license approvals — ensuring your governance structure satisfies every regulatory checkpoint.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Proactive Risk Management</div>
+              <div className={styles.cardText}>Information security program designed to reduce financial loss, protect customer trust, and increase investor confidence — continuously, not just at audit time.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Turnkey Operations</div>
+              <div className={styles.cardText}>Fully staffed, multi-lingual call centers managing AI-to-human escalation paths. 60% reduction in call volume. 50% reduction in agent training time. Your customers get world-class service from day one.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className={`${styles.udbSection} ${styles.ctaSection}`}>
+        <div className={styles.udbContainer}>
+          <h2 className={styles.ctaHeading}>Ready to see what your bank would look like?</h2>
+          <p className={styles.ctaSubtext}>Every deployment is exclusive per country. If your market is available, the window is open now.</p>
+          <Link href="/udb/apply" className={styles.btnPrimary}>Begin the Conversation</Link>
+        </div>
+      </section>
+
     </UDBLayout>
   )
 }

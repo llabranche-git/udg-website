@@ -1,116 +1,172 @@
+import Head from 'next/head'
 import Link from 'next/link'
 import UDBLayout from '../../components/UDBLayout'
 import styles from '../../styles/UDB.module.css'
 
-const stats = [
-  { number: '95+', label: 'Banks Targeted' },
-  { number: '4', label: 'Regions' },
-  { number: '$10–20M', label: 'Deployment Fee' },
-  { number: '35%', label: 'Platform Margin' },
-]
-
-const features = [
-  { icon: '🏦', title: 'Full Stack Deployment', text: 'Complete core banking, digital channels, payments infrastructure, KYC/AML, and regulatory reporting — deployed end-to-end.' },
-  { icon: '⚙️', title: 'Managed Service', text: 'UDB builds and runs the platform on your behalf. No internal technology team required. We operate the bank infrastructure so you can focus on growth.' },
-  { icon: '🤝', title: 'Equity Partnership', text: 'UDB takes an equity stake in every bank it deploys. Our long-term returns are tied to your bank\'s performance. We win when you win.' },
-]
-
 export default function UDBOverview() {
   return (
-    <UDBLayout title="Unified Digital Banking (UDB) | Redefine Your Legacy">
+    <UDBLayout>
+      <Head><title>Unified Digital Banking — Own a Modern Digital Bank</title></Head>
+
       {/* Hero */}
-      <section className={`${styles.hero} ${styles.gridBg}`}>
+      <section className={styles.hero}>
+        <div className={styles.gridBg} />
         <div className={styles.heroContent}>
-          <p className={styles.heroLabel}>Unified Digital Group &nbsp;|&nbsp; Unified Digital Banking</p>
-          <h1 className={styles.heroHeadline}>Redefine Your Legacy with Unified Digital Banking (UDB)</h1>
-          <p className={styles.heroSub}>A fully managed, cloud-native banking orchestration engine designed for growth and emerging markets.</p>
+          <span className={styles.heroLabel}>Unified Digital Banking</span>
+          <h1 className={styles.heroHeadline}>Own a Modern Digital Bank<br />in Your Market</h1>
+          <p className={styles.heroSub}>UDB is a fully managed, cloud-native banking platform that enables principal families to deploy, own, and operate a sovereign digital bank — without prior banking experience. You bring the market. We bring everything else.</p>
           <div className={styles.heroCtas}>
             <Link href="/udb/apply" className={styles.btnPrimary}>Apply for Partnership</Link>
-            <Link href="/udb/platform" className={styles.btnText}>Learn More →</Link>
+            <Link href="/udb/platform" className={styles.btnText}>See the Platform →</Link>
           </div>
-        </div>
-        <div className={styles.heroImage}>
-          <img src="/assets/starlink.jpg" alt="Digital Infrastructure" />
         </div>
       </section>
 
       {/* Stats */}
-      <div className={styles.statsRow}>
-        {stats.map(({ number, label }) => (
-          <div key={label} className={styles.statItem}>
-            <div className={styles.statNumber}>{number}</div>
-            <div className={styles.statLabel}>{label}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* What is UDB */}
-      <section className={`${styles.udbSection} ${styles.gridBg}`}>
+      <section className={`${styles.udbSection} ${styles.altSection}`}>
         <div className={styles.udbContainer}>
-          <p className={styles.sectionLabel}>The Platform</p>
-          <h2 className={styles.sectionHeading}>One Platform. Every Bank.</h2>
-          <p className={styles.sectionSubtext}>
-            Unified Digital Banking (UDB) is a fully managed, cloud-native banking platform that enables principal families to own and operate a modern digital bank. UDB handles everything — technology deployment, platform management, regulatory support, and ongoing operations — so the family can focus on growth and community impact.
-          </p>
-          <div className={styles.cardGrid3}>
-            {features.map(({ icon, title, text }) => (
-              <div key={title} className={styles.card}>
-                <div className={styles.cardIcon}>{icon}</div>
-                <h3 className={styles.cardTitle}>{title}</h3>
-                <p className={styles.cardText}>{text}</p>
-              </div>
-            ))}
+          <div className={styles.statsRow}>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>1.4B</div>
+              <div className={styles.statLabel}>Unbanked adults globally — the largest greenfield in financial services</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>$500B+</div>
+              <div className={styles.statLabel}>Projected emerging-market digital financial services by 2030</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>150M+</div>
+              <div className={styles.statLabel}>Customers the platform is engineered to serve at full scale</div>
+            </div>
+            <div className={styles.statItem}>
+              <div className={styles.statNumber}>Live</div>
+              <div className={styles.statLabel}>Deployed and operating today in Nigeria with a founding partner family</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Two Tiers */}
-      <section className={styles.altSection}>
+
+      {/* Two Pathways */}
+      <section className={`${styles.udbSection} ${styles.altSection}`}>
         <div className={styles.udbContainer}>
-          <p className={styles.sectionLabel}>Deployment Tiers</p>
-          <h2 className={styles.sectionHeading}>Two Tiers. One Standard.</h2>
-          <p className={styles.sectionSubtext}>Every UDB deployment is exclusive to one principal family in one market. We offer two deployment tiers based on scale, complexity, and ambition.</p>
+          <span className={styles.sectionLabel}>Two Pathways to Partnership</span>
+          <h2 className={styles.sectionHeading}>New to Banking or Already in It — UDB Is Built for Both</h2>
+          <div className={styles.cardGrid2} style={{marginTop:'32px'}}>
+            <div className={styles.card} style={{borderTop:'4px solid #1A6FDB'}}>
+              <div className={styles.cardTitle}>First-Time Bank Owners</div>
+              <div className={styles.cardText}>You have the market position and the relationships. You've never owned a bank — and you don't need prior banking experience. UDB handles licensing, deployment, compliance, and operations from day one. You enter as an owner, not an operator.</div>
+              <Link href="/udb/ownership" className={styles.btnText} style={{marginTop:'16px',display:'inline-block'}}>Explore this pathway →</Link>
+            </div>
+            <div className={styles.card} style={{borderTop:'4px solid #0A1628'}}>
+              <div className={styles.cardTitle}>Existing Bank Owners</div>
+              <div className={styles.cardText}>You already own one or more banks. UDB modernizes your core infrastructure, adds global financial rails, deploys a world-class compliance framework, and positions your institution to expand into new markets under the exclusive UDB country model.</div>
+              <Link href="/udb/ownership" className={styles.btnText} style={{marginTop:'16px',display:'inline-block'}}>Explore this pathway →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Bank in a Box */}
+      <section className={styles.udbSection}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>The Platform</span>
+          <h2 className={styles.sectionHeading}>A Complete Bank-in-a-Box Ecosystem</h2>
+          <p className={styles.sectionSubtext}>A comprehensive, fully managed solution engineered specifically for organizations launching sophisticated banking services without prior banking experience. UDB delivers the full stack — and manages it for the life of your partnership.</p>
           <div className={styles.cardGrid2}>
-            <div className={`${styles.tierCard} ${styles.featured}`}>
-              <div className={`${styles.tierBadge} ${styles.blue}`}>UHNW Tier</div>
-              <div className={styles.tierName}>Ultra High Net Worth</div>
-              <div className={styles.tierPrice}>$20M</div>
-              <div className={styles.tierPriceSub}>Implementation fee + $7M/yr managed services</div>
-              <ul className={styles.tierList}>
-                <li>10–20%+ UDB equity stake</li>
-                <li>Dedicated deployment team</li>
-                <li>Bespoke legal agreements</li>
-                <li>Multi-product, multi-branch deployment</li>
-                <li>Capital co-investment option</li>
-                <li>Board representation</li>
-              </ul>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Implementation &amp; Licensing</div>
+              <div className={styles.cardText}>Rapid deployment with full regulatory advisory. We guide your banking license strategy from application through approval, managing every compliance obligation along the way.</div>
             </div>
-            <div className={styles.tierCard}>
-              <div className={styles.tierBadge}>Standard Tier</div>
-              <div className={styles.tierName}>Principal Family</div>
-              <div className={styles.tierPrice}>$10M</div>
-              <div className={styles.tierPriceSub}>Implementation fee + $5M/yr managed services</div>
-              <ul className={styles.tierList}>
-                <li>5–15% UDB equity stake</li>
-                <li>Shared resource model</li>
-                <li>Standard template agreements</li>
-                <li>Single-market digital bank deployment</li>
-                <li>Proven deployment playbook</li>
-                <li>Board representation</li>
-              </ul>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Cloud &amp; Connectivity</div>
+              <div className={styles.cardText}>Built on AWS global infrastructure with integrated satellite networking. 100% uptime guaranteed in remote areas — no dependence on terrestrial cable.</div>
             </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Global Financial Rails</div>
+              <div className={styles.cardText}>Stablecoin settlement engine supporting 50+ fiat currencies and 30+ blockchains. Near-instant international settlement, invisible to your customers.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Managed Operations</div>
+              <div className={styles.cardText}>24/7 multi-lingual call centers, ongoing AML and Travel Rule compliance, and real-time risk monitoring — all operated by UDB so you never need to build an ops team.</div>
+            </div>
+          </div>
+          <div style={{textAlign:'center',marginTop:'48px'}}>
+            <Link href="/udb/platform" className={styles.btnPrimary}>Explore the Full Platform</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* The Unfair Advantage */}
+      <section className={`${styles.udbSection} ${styles.darkSection}`}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>Why UDB</span>
+          <h2 className={styles.sectionHeading}>Engineered to Remove Every Barrier</h2>
+          <p className={styles.sectionSubtext}>The challenges that have historically blocked emerging-market banking are structural. UDB was designed from the ground up to eliminate them.</p>
+          <div className={styles.cardGrid2}>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>Massive Deployment Complexity → Gone</div>
+              <div className={styles.cardText}>Turnkey, fully managed deployment. Cloud-native orchestration, complete operational integration, and Amazon Connect call center — handled end to end.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>High Regulatory Burden → Handled</div>
+              <div className={styles.cardText}>Ongoing AML, Travel Rule compliance, and multi-jurisdictional oversight handled natively by UDB. You operate; we ensure you stay compliant.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>Currency Volatility → Neutralized</div>
+              <div className={styles.cardText}>Integrated stablecoin infrastructure provides near-instant international settlements across 50+ fiat currencies and all 30 major blockchains.</div>
+            </div>
+            <div className={styles.darkCard}>
+              <div className={styles.cardTitle}>Unreliable Internet → Solved</div>
+              <div className={styles.cardText}>Integrated satellite networking via Starlink and Amazon LEO ensures 100% uptime in remote areas, providing connectivity without terrestrial cable.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Preview */}
+      <section className={styles.udbSection}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>How It Works</span>
+          <h2 className={styles.sectionHeading}>From Introduction to Operating Bank</h2>
+          <p className={styles.sectionSubtext}>UDB follows a disciplined four-step process to identify the right partner in each country, structure the exclusive framework, deploy the banking infrastructure, and build the vertical ecosystem on top.</p>
+          <div className={styles.cardGrid2} style={{marginTop:'32px'}}>
+            <div className={styles.stageItem}>
+              <div className={styles.stageNumber}>01</div>
+              <div className={styles.stageTitle}>Identify &amp; Qualify</div>
+              <div className={styles.stageText}>One strategic principal per country — political and commercial standing, track record at scale, long-horizon alignment.</div>
+            </div>
+            <div className={styles.stageItem}>
+              <div className={styles.stageNumber}>02</div>
+              <div className={styles.stageTitle}>Architect the Framework</div>
+              <div className={styles.stageText}>Exclusive country framework, banking license strategy, infrastructure deployment plan, governance and ownership structure.</div>
+            </div>
+            <div className={styles.stageItem}>
+              <div className={styles.stageNumber}>03</div>
+              <div className={styles.stageTitle}>Deploy the Bank</div>
+              <div className={styles.stageText}>Full digital banking stack launched: core engine, mobile channels, payments infrastructure, KYC/AML, and cloud operations.</div>
+            </div>
+            <div className={styles.stageItem}>
+              <div className={styles.stageNumber}>04</div>
+              <div className={styles.stageTitle}>Grow the Verticals</div>
+              <div className={styles.stageText}>The bank becomes the financial anchor for commodities, infrastructure, energy, AI, and capital flows across your ecosystem.</div>
+            </div>
+          </div>
+          <div style={{textAlign:'center',marginTop:'48px'}}>
+            <Link href="/udb/how-it-works" className={styles.btnText}>See the Full Process →</Link>
           </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className={styles.ctaSection}>
+      <section className={`${styles.udbSection} ${styles.ctaSection}`}>
         <div className={styles.udbContainer}>
-          <h2 className={styles.ctaHeading}>Ready to Build a Bank?</h2>
-          <p className={styles.ctaSubtext}>Join a select group of principal families deploying the future of banking in their markets.</p>
-          <Link href="/udb/apply" className={styles.btnPrimary}>Apply for Partnership</Link>
+          <h2 className={styles.ctaHeading}>Your country. Your bank. Your legacy.</h2>
+          <p className={styles.ctaSubtext}>UDB works exclusively with one principal family per country. If your market is open, now is the time to establish your position.</p>
+          <Link href="/udb/apply" className={styles.btnPrimary}>Begin the Conversation</Link>
         </div>
       </section>
+
     </UDBLayout>
   )
 }
