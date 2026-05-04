@@ -23,9 +23,7 @@ export default function Home() {
 
       {/* Hero Video */}
       <section className={styles.hero}>
-        <video className={styles.heroVideo} autoPlay loop muted playsInline poster="/assets/hero-poster.jpg">
-          <source src="/assets/hero-video.mp4" type="video/mp4" />
-        </video>
+        <img src="/assets/hero-poster.jpg" className={styles.heroVideo} alt="" aria-hidden="true" />
         <div className={styles.heroOverlay}>
           <div className={styles.heroWords}>
             <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reimagine.</span>
