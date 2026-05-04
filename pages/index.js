@@ -20,17 +20,6 @@ export default function Home() {
         <meta name="description" content="Unified Digital Group (UDG) delivers bold visions for the future, from reinventing supply chains to building smart cities." />
       </Head>
 
-      {/* Hero Word Animations — inline to guarantee CSS is present in production */}
-      <style>{`
-        @keyframes heroWordFadeIn {
-          from { opacity: 0; transform: translateY(8px); }
-          to   { opacity: 1; transform: translateY(0); }
-        }
-        .heroWord1 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 0.4s; }
-        .heroWord2 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 0.9s; }
-        .heroWord3 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 1.4s; }
-        .heroWord4 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 1.9s; }
-      `}</style>
 
       {/* Hero Video */}
       <section className={styles.hero}>
@@ -39,10 +28,10 @@ export default function Home() {
         </video>
         <div className={styles.heroOverlay}>
           <div className={styles.heroWords}>
-            <span className="heroWord1" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reimagine.</span>
-            <span className="heroWord2" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reinvent.</span>
-            <span className="heroWord3" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Redefine.</span>
-            <span className="heroWord4" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(28px,5vw,60px)',fontWeight:400,color:'rgba(255,255,255,0.85)',lineHeight:1.2,letterSpacing:'-1px',textAlign:'center',marginTop:'8px'}}>Your Legacy.</span>
+            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reimagine.</span>
+            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reinvent.</span>
+            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Redefine.</span>
+            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(28px,5vw,60px)',fontWeight:400,color:'rgba(255,255,255,0.85)',lineHeight:1.2,letterSpacing:'-1px',textAlign:'center',marginTop:'8px'}}>Your Legacy.</span>
           </div>
         </div>
       </section>
