@@ -415,11 +415,24 @@
 
 /* ─── Inner Banner ───────────────────────────────────────────────────────── */
 .innerBanner {
-  background: #0A1628;
-  padding: 160px 0 80px;
-  min-height: 360px;
+  background: #0A1628 center/cover no-repeat;
+  padding: 0;
+  min-height: 420px;
   position: relative;
   overflow: hidden;
+}
+.innerBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 22, 40, 0.82);
+  z-index: 1;
+}
+.innerBanner > .udbContainer {
+  position: relative;
+  z-index: 2;
+  padding-top: 140px;
+  padding-bottom: 80px;
 }
 .bannerLabel {
   font-family: 'Work Sans', sans-serif;
@@ -971,21 +984,5 @@
   .dashCards { grid-template-columns: 1fr; }
 }
 
-/* Inner banner background image */
-.innerBannerImg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 0;
-  opacity: 0.18;
-  filter: grayscale(20%);
-}
-.innerBanner > .udbContainer {
-  position: relative;
-  z-index: 2;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
+
 

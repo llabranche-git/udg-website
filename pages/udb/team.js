@@ -8,12 +8,10 @@ export default function UDBTeam() {
     <UDBLayout>
       <Head><title>Unified Digital Banking — The Team</title></Head>
 
-      <section className={styles.innerBanner}>
-        <img src="/assets/udb-platform.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
-        <div className={styles.gridBg} />
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-team.jpg)"}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Team</span>
-          <h1 className={styles.bannerHeading}>Designed by Industry Leaders.<br />Built to Scale to 150M+ Customers.</h1>
+          <h1 className={styles.bannerHeading}>Designed by Industry Leaders.<br />Built to Scale to 150M+ Customers Per Bank — A Billion-Person Platform.</h1>
           <p className={styles.bannerSub}>A powerhouse of talent from UDG, Slalom, Qucoon, AWS, and Deloitte. Over 200 years of combined experience delivering mission-critical solutions for the Federal Reserve, Royal Bank of Canada, Discover Financial Services, and the Central Bank of Nigeria.</p>
         </div>
       </section>

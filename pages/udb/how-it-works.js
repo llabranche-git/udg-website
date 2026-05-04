@@ -8,9 +8,7 @@ export default function UDBHowItWorks() {
     <UDBLayout>
       <Head><title>Unified Digital Banking — How It Works</title></Head>
 
-      <section className={styles.innerBanner}>
-        <img src="/assets/udb-how-it-works.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
-        <div className={styles.gridBg} />
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-how-it-works.jpg)"}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Process</span>
           <h1 className={styles.bannerHeading}>From First Conversation<br />to Operating Bank</h1>

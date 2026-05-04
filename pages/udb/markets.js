@@ -8,9 +8,7 @@ export default function UDBMarkets() {
     <UDBLayout>
       <Head><title>Unified Digital Banking — Markets</title></Head>
 
-      <section className={styles.innerBanner}>
-        <img src="/assets/udb-markets.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
-        <div className={styles.gridBg} />
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-markets.jpg)"}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Markets</span>
           <h1 className={styles.bannerHeading}>A Generational Gap in<br />Sovereign Financial Infrastructure</h1>
@@ -51,22 +49,22 @@ export default function UDBMarkets() {
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={`${styles.regionCard} ${styles.africa}`}>
               <div className={styles.regionName}>Sub-Saharan Africa</div>
-              <div className={styles.regionText}>The continent with the world's largest unbanked population and the fastest-growing mobile money market. $1T+ in annual mobile money transactions already. UDB is live in Nigeria — the continent's largest economy — with Angola and Zambia in active structuring.</div>
+              <div className={styles.regionText}>The world's largest unbanked population and the most expensive remittance corridor on earth — $100B+ annually at fees averaging 8%. UDB's stablecoin rails allow your bank to capture diaspora remittance flows from Europe, the US, and the Gulf at 10x lower cost than legacy operators. $1T+ in annual mobile money transactions already. Cross-border commodity settlement for oil, gas, and agricultural products runs through the same rails. UDB is live in Nigeria — the continent's largest economy — with Angola and Zambia in active structuring.</div>
               <div className={styles.regionMarkets}>Active: Nigeria (Live) · Angola · Zambia · Ethiopia · 12+ more</div>
             </div>
             <div className={`${styles.regionCard} ${styles.mena}`}>
               <div className={styles.regionName}>MENA</div>
-              <div className={styles.regionText}>The Gulf Cooperation Council and broader MENA region represent some of the world's highest concentrations of sovereign wealth and principal family capital. UDB brings the infrastructure to deploy that capital as sovereign financial architecture in underserved markets.</div>
+              <div className={styles.regionText}>The GCC moves hundreds of billions in sovereign wealth, commodity revenues, and cross-border capital annually — much of it through slow, expensive correspondent banking channels. UDB's stablecoin rails enable real-time cross-GCC settlement, commodity trade finance, and sovereign capital deployment without intermediary friction. The same infrastructure supports MENA-to-Africa capital flows — the fastest-growing bilateral investment corridor in the emerging world.</div>
               <div className={styles.regionMarkets}>Active: GCC markets in active qualification</div>
             </div>
             <div className={`${styles.regionCard} ${styles.sea}`}>
               <div className={styles.regionName}>Southeast Asia</div>
-              <div className={styles.regionText}>Southeast Asia's unbanked and underbanked populations represent hundreds of millions of potential customers across diverse regulatory environments. UDB's multi-jurisdictional compliance architecture and 200+ language support makes it purpose-built for the region.</div>
+              <div className={styles.regionText}>Southeast Asia's intra-regional remittance corridors — Philippines, Indonesia, Vietnam, Bangladesh — move tens of billions annually, much of it through cash networks and fee-heavy wire services. UDB's stablecoin rails make your bank the preferred channel for diaspora remittances and cross-border commerce, capturing flows that currently bypass the banking system entirely. 200+ language support and multi-jurisdictional compliance make UDB purpose-built for the region's diversity.</div>
               <div className={styles.regionMarkets}>Active: Principals under active qualification</div>
             </div>
             <div className={`${styles.regionCard} ${styles.latam}`}>
               <div className={styles.regionName}>Latin America</div>
-              <div className={styles.regionText}>Latin America's financial infrastructure gap — particularly in rural and indigenous communities — creates significant demand for sovereign-quality digital banking. UDB's stablecoin rails and local merchant integration address the region's currency and connectivity challenges directly.</div>
+              <div className={styles.regionText}>Hyperinflation, currency devaluation, and dollar-denominated debt have made currency stability the defining financial need for hundreds of millions of Latin Americans. UDB's stablecoin rails provide dollar-equivalent settlement without requiring dollar accounts — giving your customers protection from local currency decay. Cross-border commerce between Brazil, Argentina, Colombia, and the US runs through the same infrastructure, capturing bilateral trade flows that currently move through expensive and opaque correspondent networks.</div>
               <div className={styles.regionMarkets}>Active: Caribbean markets in pipeline</div>
             </div>
           </div>

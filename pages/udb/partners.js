@@ -8,9 +8,7 @@ export default function UDBPartners() {
     <UDBLayout>
       <Head><title>Unified Digital Banking — Partner Ecosystem</title></Head>
 
-      <section className={styles.innerBanner}>
-        <img src="/assets/udb-partners.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
-        <div className={styles.gridBg} />
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-partners.jpg)"}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Partner Ecosystem</span>
           <h1 className={styles.bannerHeading}>Powered by Industry-Leading<br />Partnerships</h1>

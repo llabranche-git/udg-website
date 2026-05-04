@@ -8,9 +8,7 @@ export default function UDBOwnership() {
     <UDBLayout>
       <Head><title>Unified Digital Banking — Your Ownership</title></Head>
 
-      <section className={styles.innerBanner}>
-        <img src="/assets/udb-ownership.jpg" className={styles.innerBannerImg} alt="" aria-hidden="true" />
-        <div className={styles.gridBg} />
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-ownership.jpg)"}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Your Ownership</span>
           <h1 className={styles.bannerHeading}>One Country. One Family.<br />One Bank. Yours.</h1>
@@ -96,6 +94,10 @@ export default function UDBOwnership() {
             <div className={styles.card}>
               <div className={styles.cardTitle}>A Generational Legacy</div>
               <div className={styles.cardText}>Your bank is designed to outlast you. The infrastructure, the license, the customer relationships, and the governance architecture are built to be passed down — a sovereign financial institution bearing your family's name in your country's economy.</div>
+            </div>
+            <div className={styles.card}>
+              <div className={styles.cardTitle}>Equity Protected from Currency Decay</div>
+              <div className={styles.cardText}>Your bank's equity value compounds in real terms — not nominal terms denominated in a volatile local currency. UDB's stablecoin rails mean bank revenues convert, store, and transfer in stable value. The multi-generational asset you're building is protected from the currency erosion that has historically destroyed emerging-market family wealth.</div>
             </div>
           </div>
         </div>

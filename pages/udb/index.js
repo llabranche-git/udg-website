@@ -37,8 +37,8 @@ export default function UDBOverview() {
               <div className={styles.statLabel}>Projected emerging-market digital financial services by 2030</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>150M+</div>
-              <div className={styles.statLabel}>Customers the platform is engineered to serve at full scale</div>
+              <div className={styles.statNumber}>1B+</div>
+              <div className={styles.statLabel}>People the platform is architected to serve across all deployments — a billion-person banking infrastructure</div>
             </div>
             <div className={styles.statItem}>
               <div className={styles.statNumber}>Live</div>
@@ -99,28 +99,28 @@ export default function UDBOverview() {
         </div>
       </section>
 
-      {/* The Unfair Advantage */}
+      {/* 4 Differentiators */}
       <section className={`${styles.udbSection} ${styles.darkSection}`}>
         <div className={styles.udbContainer}>
-          <span className={styles.sectionLabel}>Why UDB</span>
-          <h2 className={styles.sectionHeading}>Engineered to Remove Every Barrier</h2>
-          <p className={styles.sectionSubtext}>The challenges that have historically blocked emerging-market banking are structural. UDB was designed from the ground up to eliminate them.</p>
-          <div className={styles.cardGrid2}>
+          <span className={styles.sectionLabel}>What Makes UDB Different</span>
+          <h2 className={styles.sectionHeading}>Four Barriers. Four Solutions.<br />One Bank That Reaches Everyone.</h2>
+          <p className={styles.sectionSubtext}>Every other digital banking platform is built for the 30% of the market that already has a smartphone, a data plan, and financial literacy. UDB is built for 100% — including the 70% that everyone else has left behind.</p>
+          <div className={styles.cardGrid2} style={{marginTop:'48px'}}>
             <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>Massive Deployment Complexity → Gone</div>
-              <div className={styles.cardText}>Turnkey, fully managed deployment. Cloud-native orchestration, complete operational integration, and Amazon Connect call center — handled end to end.</div>
+              <div className={styles.cardTitle}>Stablecoin Infrastructure</div>
+              <div className={styles.cardText}>Currency volatility has destroyed more emerging-market bank balance sheets than any other single force. UDB eliminates FX risk at the infrastructure level — your bank never holds currency exposure. The same rails power cross-border transfers, intercontinental remittances at 10x lower cost, and commodity trade settlement across 50+ currencies and 30+ blockchains. Your bank settles in stable value. Always.</div>
             </div>
             <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>High Regulatory Burden → Handled</div>
-              <div className={styles.cardText}>Ongoing AML, Travel Rule compliance, and multi-jurisdictional oversight handled natively by UDB. You operate; we ensure you stay compliant.</div>
+              <div className={styles.cardTitle}>Total Population Reach via USSD</div>
+              <div className={styles.cardText}>In some of UDB's target markets, 70% of the population has no smartphone. A smartphone-only bank is a niche product. UDB delivers full banking — account opening, transfers, bill payment, loan applications — through USSD (*123# menus) on any mobile phone, on any 2G network, with no app, no internet, no data plan required. Your bank's TAM is every mobile subscriber in the country. Not a slice of it.</div>
             </div>
             <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>Currency Volatility → Neutralized</div>
-              <div className={styles.cardText}>Integrated stablecoin infrastructure provides near-instant international settlements across 50+ fiat currencies and all 30 major blockchains.</div>
+              <div className={styles.cardTitle}>200+ Language Support</div>
+              <div className={styles.cardText}>Language barriers have excluded hundreds of millions of people from formal banking. UDB's Lara AI platform delivers professional, AI-driven interfaces in 200+ languages — with human-in-the-loop review to ensure cultural accuracy. Amazon Connect powers multi-lingual call centers. Whether your market speaks Hausa, Swahili, Arabic, Tagalog, or Portuguese, your bank speaks to every customer in their language.</div>
             </div>
             <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>Unreliable Internet → Solved</div>
-              <div className={styles.cardText}>Integrated satellite networking via Starlink and Amazon LEO ensures 100% uptime in remote areas, providing connectivity without terrestrial cable.</div>
+              <div className={styles.cardTitle}>Built-In Financial &amp; Digital Literacy</div>
+              <div className={styles.cardText}>Across emerging markets, large segments of the population have never interacted with a formal bank. UDB includes a literacy curriculum — curated by world-renowned universities including Oxford — built directly into the platform. Created once, replicated across 200+ languages automatically, delivered via smartphone and USSD to every customer regardless of device. Your bank doesn't just open accounts. It builds the financial capability of your entire market.</div>
             </div>
           </div>
         </div>
