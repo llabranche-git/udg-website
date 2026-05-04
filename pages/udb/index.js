@@ -10,17 +10,17 @@ export default function UDBOverview() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <div className={styles.heroImage}>
-          <img src="/assets/digital-transformation.jpg" alt="Digital Banking Infrastructure" />
-        </div>
         <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Unified Digital Banking</span>
-          <h1 className={styles.heroHeadline}>Own a Modern Digital Bank<br />in Your Market</h1>
-          <p className={styles.heroSub}>UDB is a fully managed, cloud-native banking platform that enables principal families to deploy, own, and operate a sovereign digital bank — without prior banking experience. You bring the market. We bring everything else.</p>
+          <span className={styles.heroLabel}>Unified Digital Group</span>
+          <h1 className={styles.heroHeadline}>Redefine Your Legacy with Unified Digital Banking (UDB)</h1>
+          <p className={styles.heroSub}>A fully managed, cloud-native banking orchestration engine designed for growth and emerging markets.</p>
           <div className={styles.heroCtas}>
             <Link href="/udb/apply" className={styles.btnPrimary}>Apply for Partnership</Link>
             <Link href="/udb/platform" className={styles.btnText}>See the Platform →</Link>
           </div>
+        </div>
+        <div className={styles.heroImage}>
+          <img src="/assets/udb-hero.jpg" alt="Emerging market city infrastructure" />
         </div>
       </section>
 

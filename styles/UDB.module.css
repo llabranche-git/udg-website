@@ -136,7 +136,7 @@
 /* ─── Hero ───────────────────────────────────────────────────────────────── */
 .hero {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 45% 55%;
   min-height: 92vh;
   padding-top: 72px;
 }
