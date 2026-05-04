@@ -32,7 +32,7 @@ const services = [
   {
     num: '06',
     title: 'Digital Banking Deployment (Unified Digital Banking)',
-    text: 'UDB is UDG's flagship managed banking platform — enabling principal families to own and operate a modern digital bank in their market. UDB deploys the full banking stack end-to-end: core banking engine, digital channels, payments infrastructure, KYC/AML, and cloud operations. UDB manages the platform as a service for the life of the partnership and takes an equity stake in every bank it deploys. Two deployment tiers serve UHNW and standard principal family profiles across Africa, MENA, Southeast Asia, and Latin America.'
+    text: "UDB is UDG's flagship managed banking platform — enabling principal families to own and operate a modern digital bank in their market. UDB deploys the full banking stack end-to-end: core banking engine, digital channels, payments infrastructure, KYC/AML, and cloud operations. UDB manages the platform as a service for the life of the partnership and takes an equity stake in every bank it deploys. Two deployment tiers serve UHNW and standard principal family profiles across Africa, MENA, Southeast Asia, and Latin America."
   }
 ]
 
