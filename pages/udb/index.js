@@ -10,7 +10,9 @@ export default function UDBOverview() {
 
       {/* Hero */}
       <section className={styles.hero}>
-        <div className={styles.gridBg} />
+        <div className={styles.heroImage}>
+          <img src="/assets/digital-transformation.jpg" alt="Digital Banking Infrastructure" />
+        </div>
         <div className={styles.heroContent}>
           <span className={styles.heroLabel}>Unified Digital Banking</span>
           <h1 className={styles.heroHeadline}>Own a Modern Digital Bank<br />in Your Market</h1>
