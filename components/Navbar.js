@@ -39,6 +39,9 @@ export default function Navbar() {
           <Link href="/what-we-do" className={`${styles.navLink} ${router.pathname === '/what-we-do' ? styles.active : ''}`}>
             What We Do
           </Link>
+          <Link href="/udb" className={`${styles.navLink} ${router.pathname.startsWith('/udb') ? styles.active : ''}`}>
+            UDB
+          </Link>
           <Link href="/contact-us" className={styles.ctaBtn}>
             <span>Contact Us</span>
             <span className={styles.arrowWrap}>

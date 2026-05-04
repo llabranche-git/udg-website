@@ -28,6 +28,11 @@ const services = [
     num: '05',
     title: 'Physical Technology Implementation',
     text: 'New business outcomes, and the continued evolution of AI technologies, may require physical deployment and integration to be realized. UDG brings next-generation solutions and partnerships to life across satellite internet connectivity, private GSM networks, IoT devices, robotics, surveillance, and more. By combining strategic planning with hands-on expertise, complex technology is transformed into practical, enterprise-ready assets that expand capabilities and accelerate results.'
+  },
+  {
+    num: '06',
+    title: 'Digital Banking Deployment (Unified Digital Banking)',
+    text: 'UDB is UDG's flagship managed banking platform — enabling principal families to own and operate a modern digital bank in their market. UDB deploys the full banking stack end-to-end: core banking engine, digital channels, payments infrastructure, KYC/AML, and cloud operations. UDB manages the platform as a service for the life of the partnership and takes an equity stake in every bank it deploys. Two deployment tiers serve UHNW and standard principal family profiles across Africa, MENA, Southeast Asia, and Latin America.'
   }
 ]
 
@@ -88,6 +93,33 @@ export default function WhatWeDo() {
           <p className={styles.body}>UDG delivers transformative outcomes through a fit-for-purpose operating model designed for the world&apos;s most ambitious families. From the outset, practice leaders engage alongside clients in solution design and vision shaping, ensuring every initiative is co-created, strategically aligned, and execution-ready.</p>
           <p className={styles.body}>Global teams of industry SMEs, pre-sales solution architects, and prototyping experts bring <strong>deep domain knowledge</strong> across Supply Chain &amp; Logistics, Financial Services, Energy, Healthcare, Public Sector, Telecommunications, and Retail. Solution architects provide specialization in networking, telecom, satellite, silicon, virtualization, ERP, data &amp; analytics, cloud, and AI, combining technical depth with strategic insight. These capabilities are distributed globally and available at scale, through our strategic partnerships, enabling in-market delivery wherever impact is required.</p>
           <p className={styles.body}>By prioritizing business results and aligning priorities through equity and SPV structures, UDG <strong>accelerates outcomes</strong> while maintaining competitive pricing and trusted relationships. This integrated approach—melding equity stake, elite talent, and global strategic partners—is our unique differentiator, allowing families to <strong>think bigger</strong>, <strong>act faster</strong>, and achieve outcomes that others deem impossible.</p>
+        </div>
+      </section>
+
+      {/* UDB Featured */}
+      <section className="section dark-background">
+        <div className="base-container">
+          <div className={styles.udbFeature}>
+            <div className={styles.udbFeatureLeft}>
+              <p className={styles.udbFeatureLabel}>Flagship Product</p>
+              <h2 className={styles.udbFeatureHeading}>Unified Digital Banking (UDB)</h2>
+              <p className={styles.udbFeatureBody}>The only end-to-end managed banking platform built specifically for principal families in growth markets. UDB deploys, operates, and co-owns a digital bank in your market — so you can focus on building legacy, not running technology infrastructure.</p>
+              <Link href="/udb" className="pill-btn" style={{marginTop:'8px', display:'inline-flex'}}>
+                Explore UDB
+                <span style={{display:'flex',alignItems:'center'}}>
+                  <img src="/assets/arrow-right-up.svg" alt="" width="18" height="18" />
+                </span>
+              </Link>
+            </div>
+            <div className={styles.udbFeatureRight}>
+              {[['$10–20M', 'Per deployment (tier-based)'], ['5–20%+', 'UDB equity in your bank'], ['4 Regions', 'Africa · MENA · SEA · LATAM'], ['Lifetime', 'Managed partnership']].map(([val, label]) => (
+                <div key={label} className={styles.udbFeatureStat}>
+                  <span className={styles.udbFeatureStatNum}>{val}</span>
+                  <span className={styles.udbFeatureStatLabel}>{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 

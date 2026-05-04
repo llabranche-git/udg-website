@@ -161,3 +161,82 @@
   .hero { height: 60vh; min-height: 400px; }
   .advantageGrid { grid-template-columns: 1fr; gap: 28px; }
 }
+
+/* ── UDB Spotlight ─────────────────────────────────────────────── */
+.udbSpotlight {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 80px;
+  align-items: center;
+}
+.udbSpotlightLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b54fd8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.udbSpotlightHeading {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(26px, 3vw, 40px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1.2px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.udbSpotlightBody {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 580px;
+}
+.udbSpotlightStats {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+.udbSpotlightStat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.udbSpotlightNum {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.udbSpotlightStatLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.udbSpotlightImage {
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+.udbSpotlightImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.85);
+}
+@media (max-width: 900px) {
+  .udbSpotlight {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .udbSpotlightImage { display: none; }
+}

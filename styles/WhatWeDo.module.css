@@ -57,3 +57,69 @@
   .serviceItem { flex-direction: column; gap: 12px; }
   .serviceNum { font-size: 32px; width: auto; }
 }
+
+/* ── UDB Feature ───────────────────────────────────────────────── */
+.udbFeature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.udbFeatureLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #b54fd8;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.udbFeatureHeading {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: clamp(24px, 2.5vw, 36px);
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.udbFeatureBody {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+.udbFeatureRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.udbFeatureStat {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 28px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+}
+.udbFeatureStatNum {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.8px;
+  line-height: 1;
+}
+.udbFeatureStatLabel {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.4;
+}
+@media (max-width: 900px) {
+  .udbFeature { grid-template-columns: 1fr; gap: 40px; }
+  .udbFeatureRight { grid-template-columns: 1fr 1fr; }
+}

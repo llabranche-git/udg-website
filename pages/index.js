@@ -20,6 +20,18 @@ export default function Home() {
         <meta name="description" content="Unified Digital Group (UDG) delivers bold visions for the future, from reinventing supply chains to building smart cities." />
       </Head>
 
+      {/* Hero Word Animations — inline to guarantee CSS is present in production */}
+      <style>{`
+        @keyframes heroWordFadeIn {
+          from { opacity: 0; transform: translateY(8px); }
+          to   { opacity: 1; transform: translateY(0); }
+        }
+        .heroWord1 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 0.4s; }
+        .heroWord2 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 0.9s; }
+        .heroWord3 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 1.4s; }
+        .heroWord4 { opacity: 0; animation: heroWordFadeIn 1.2s ease forwards 1.9s; }
+      `}</style>
+
       {/* Hero Video */}
       <section className={styles.hero}>
         <video className={styles.heroVideo} autoPlay loop muted playsInline poster="/assets/hero-poster.jpg">
@@ -98,6 +110,39 @@ export default function Home() {
               <Link href="/what-we-do" className="text-link">
                 What We Do <img src="/assets/arrow-right-up.svg" alt="" />
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* UDB Spotlight */}
+      <section className="section dark-background">
+        <div className="base-container">
+          <div className={styles.udbSpotlight}>
+            <div className={styles.udbSpotlightText}>
+              <p className={styles.udbSpotlightLabel}>Flagship Product</p>
+              <h2 className={styles.udbSpotlightHeading}>Introducing Unified Digital Banking (UDB)</h2>
+              <p className={styles.udbSpotlightBody}>UDB is UDG&apos;s fully managed, cloud-native banking platform — enabling principal families to own and operate a modern digital bank in their market. UDB deploys the full banking stack, manages it as a service, and takes an equity stake in every bank it builds.</p>
+              <div className={styles.udbSpotlightStats}>
+                <div className={styles.udbSpotlightStat}>
+                  <span className={styles.udbSpotlightNum}>95+</span>
+                  <span className={styles.udbSpotlightStatLabel}>Banks Targeted</span>
+                </div>
+                <div className={styles.udbSpotlightStat}>
+                  <span className={styles.udbSpotlightNum}>4</span>
+                  <span className={styles.udbSpotlightStatLabel}>Regions</span>
+                </div>
+                <div className={styles.udbSpotlightStat}>
+                  <span className={styles.udbSpotlightNum}>$10–20M</span>
+                  <span className={styles.udbSpotlightStatLabel}>Per Deployment</span>
+                </div>
+              </div>
+              <Link href="/udb" className="text-link" style={{color:'#fff', marginTop:'8px'}}>
+                Explore UDB <img src="/assets/arrow-right-up.svg" alt="" />
+              </Link>
+            </div>
+            <div className={styles.udbSpotlightImage}>
+              <img src="/assets/digital-transformation.jpg" alt="Unified Digital Banking" />
             </div>
           </div>
         </div>
