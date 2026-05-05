@@ -85,18 +85,27 @@ function SlideContent({ slide, active, goTo }) {
 
 function HeroCarousel() {
   const [active, setActive] = useState(0)
-  const [next, setNext] = useState(null)
-  const [sliding, setSliding] = useState(false)
+  const [incoming, setIncoming] = useState(null)
+  const [incomingReady, setIncomingReady] = useState(false)
+  const sliding = incoming !== null
 
   const advance = (nextIdx) => {
     if (sliding) return
-    setNext(nextIdx)
-    setSliding(true)
-    setTimeout(() => {
-      setActive(nextIdx)
-      setNext(null)
-      setSliding(false)
-    }, 1050)
+    setIncoming(nextIdx)
+    setIncomingReady(false)
+    // Double RAF: paint at translateX(100%) first, then trigger transition
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        setIncomingReady(true)
+      })
+    })
+  }
+
+  const handleTransitionEnd = () => {
+    if (incoming === null) return
+    setActive(incoming)
+    setIncoming(null)
+    setIncomingReady(false)
   }
 
   useEffect(() => {
@@ -113,20 +122,31 @@ function HeroCarousel() {
 
   return (
     <div className={styles.heroCarouselWrap}>
-      {heroSlides.map((slide, i) => (
+      {/* Current slide — always visible behind */}
+      <div
+        className={styles.heroSlideBase}
+        style={{ backgroundImage: `url(${heroSlides[active].image})` }}
+      >
+        <SlideContent slide={heroSlides[active]} active={active} goTo={goTo} />
+      </div>
+      {/* Incoming slide — slides in from right on top */}
+      {incoming !== null && (
         <div
-          key={i}
-          className={`${styles.heroSlide} ${
-            i === active && !sliding ? styles.heroSlideActive :
-            i === active && sliding ? styles.heroSlideExiting :
-            i === next && sliding ? styles.heroSlideEntering :
-            styles.heroSlideHidden
-          }`}
-          style={{ backgroundImage: `url(${slide.image})` }}
+          className={styles.heroSlideBase}
+          style={{
+            backgroundImage: `url(${heroSlides[incoming].image})`,
+            position: 'absolute',
+            inset: 0,
+            transform: incomingReady ? 'translateX(0)' : 'translateX(100%)',
+            transition: incomingReady ? 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)' : 'none',
+            zIndex: 3,
+            willChange: 'transform',
+          }}
+          onTransitionEnd={handleTransitionEnd}
         >
-          <SlideContent slide={slide} active={active} goTo={goTo} />
+          <SlideContent slide={heroSlides[incoming]} active={incoming} goTo={goTo} />
         </div>
-      ))}
+      )}
     </div>
   )
 }

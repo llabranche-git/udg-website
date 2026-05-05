@@ -306,9 +306,7 @@
   overflow: hidden;
   height: 480px;
 }
-.heroSlide {
-  position: absolute;
-  inset: 0;
+.heroSlideBase {
   background-color: #0A1628;
   background-position: center;
   background-size: cover;
@@ -316,28 +314,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  transform: translateX(100%);
-  will-change: transform;
-  backface-visibility: hidden;
-  z-index: 1;
-}
-.heroSlideActive {
-  transform: translateX(0);
-  z-index: 2;
-}
-.heroSlideExiting {
-  transform: translateX(0);
-  z-index: 2;
-}
-.heroSlideEntering {
-  transform: translateX(100%);
-  animation: slideInFromRight 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-  z-index: 3;
-}
-.heroSlideHidden {
-  transform: translateX(100%);
-  visibility: hidden;
-  z-index: 1;
+  height: 100%;
 }
 .heroCarouselOverlay {
   position: absolute;
