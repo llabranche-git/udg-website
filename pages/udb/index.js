@@ -1,28 +1,120 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { useState, useEffect } from 'react'
 import UDBLayout from '../../components/UDBLayout'
 import styles from '../../styles/UDB.module.css'
+
+const heroSlides = [
+  {
+    label: 'Ownership',
+    headline: 'Own the Modern Digital Bank
+in Your Market.',
+    sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team to run it.',
+    image: '/assets/udb-hero.jpg',
+  },
+  {
+    label: 'Platform Scale',
+    headline: 'Banking Infrastructure
+for a Billion People.',
+    sub: 'Architected for the scale of an entire continent. 150M+ customers per bank. A billion-person platform across all deployments.',
+    image: '/assets/inf3.jpg',
+  },
+  {
+    label: 'Digital Currency',
+    headline: 'Stable Digital Currency.
+Built Into Every Bank.',
+    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value.',
+    image: '/assets/inf9.jpg',
+  },
+  {
+    label: 'Total Population Reach',
+    headline: 'Every Customer.
+Every Phone. Every Market.',
+    sub: 'USSD banking on any mobile phone, any 2G network, no smartphone required. Your TAM is every mobile subscriber in the country.',
+    image: '/assets/inf10.jpg',
+  },
+  {
+    label: '200+ Languages',
+    headline: 'Your Bank Speaks
+Every Language.',
+    sub: 'AI-powered localisation in 200+ languages — not just translation, but full cultural adaptation at the platform level.',
+    image: '/assets/inf12.jpg',
+  },
+  {
+    label: 'Security & Compliance',
+    headline: 'Born Compliant.
+Stays Compliant.',
+    sub: '112 standards, 80+ unified controls, AML, FATF Travel Rule, and Tier-1 international certifications — built in from day one.',
+    image: '/assets/inf4.jpg',
+  },
+]
+
+function HeroCarousel() {
+  const [active, setActive] = useState(0)
+  const [fading, setFading] = useState(false)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFading(true)
+      setTimeout(() => {
+        setActive(prev => (prev + 1) % heroSlides.length)
+        setFading(false)
+      }, 500)
+    }, 5500)
+    return () => clearInterval(timer)
+  }, [])
+
+  const goTo = (idx) => {
+    if (idx === active) return
+    setFading(true)
+    setTimeout(() => {
+      setActive(idx)
+      setFading(false)
+    }, 500)
+  }
+
+  const slide = heroSlides[active]
+
+  return (
+    <section
+      className={`${styles.heroCarousel} ${fading ? styles.heroCarouselFading : ''}`}
+      style={{ backgroundImage: `url(${slide.image})` }}
+    >
+      <div className={styles.heroCarouselOverlay} />
+      <div className={styles.heroCarouselContent}>
+        <span className={styles.heroCarouselLabel}>{slide.label}</span>
+        <h1 className={styles.heroCarouselHeadline}>
+          {slide.headline.split('\n').map((line, i, arr) => (
+            <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
+          ))}
+        </h1>
+        <p className={styles.heroCarouselSub}>{slide.sub}</p>
+        <div className={styles.heroCarouselCtas}>
+          <Link href="/udb/apply" className={styles.udbHeroBtnPrimary}>Apply for Partnership</Link>
+          <Link href="/udb/platform" className={styles.udbHeroBtnText}>See the Platform →</Link>
+        </div>
+        <div className={styles.heroDots}>
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              className={`${styles.heroDot} ${i === active ? styles.heroDotActive : ''}`}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
 
 export default function UDBOverview() {
   return (
     <UDBLayout>
       <Head><title>Unified Digital Banking — Own a Modern Digital Bank</title></Head>
 
-      {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <span className={styles.heroLabel}>Unified Digital Group</span>
-          <h1 className={styles.heroHeadline}>Redefine Your Legacy with Unified Digital Banking (UDB)</h1>
-          <p className={styles.heroSub}>A fully managed, cloud-native banking orchestration engine designed for growth and emerging markets.</p>
-          <div className={styles.heroCtas}>
-            <Link href="/udb/apply" className={styles.btnPrimary}>Apply for Partnership</Link>
-            <Link href="/udb/platform" className={styles.btnText}>See the Platform →</Link>
-          </div>
-        </div>
-        <div className={styles.heroImage}>
-          <img src="/assets/udb-hero.jpg" alt="Emerging market city infrastructure" />
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* Stats */}
       <section className={`${styles.udbSection} ${styles.altSection}`}>
@@ -131,31 +223,9 @@ export default function UDBOverview() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>How It Works</span>
           <h2 className={styles.sectionHeading}>From Introduction to Operating Bank</h2>
-          <p className={styles.sectionSubtext}>UDB follows a disciplined four-step process to identify the right partner in each country, structure the exclusive framework, deploy the banking infrastructure, and build the vertical ecosystem on top.</p>
-          <div className={styles.cardGrid2} style={{marginTop:'32px'}}>
-            <div className={styles.stageItem}>
-              <div className={styles.stageNumber}>01</div>
-              <div className={styles.stageTitle}>Identify &amp; Qualify</div>
-              <div className={styles.stageText}>One strategic principal per country — political and commercial standing, track record at scale, long-horizon alignment.</div>
-            </div>
-            <div className={styles.stageItem}>
-              <div className={styles.stageNumber}>02</div>
-              <div className={styles.stageTitle}>Architect the Framework</div>
-              <div className={styles.stageText}>Exclusive country framework, banking license strategy, infrastructure deployment plan, governance and ownership structure.</div>
-            </div>
-            <div className={styles.stageItem}>
-              <div className={styles.stageNumber}>03</div>
-              <div className={styles.stageTitle}>Deploy the Bank</div>
-              <div className={styles.stageText}>Full digital banking stack launched: core engine, mobile channels, payments infrastructure, KYC/AML, and cloud operations.</div>
-            </div>
-            <div className={styles.stageItem}>
-              <div className={styles.stageNumber}>04</div>
-              <div className={styles.stageTitle}>Grow the Verticals</div>
-              <div className={styles.stageText}>The bank becomes the financial anchor for commodities, infrastructure, energy, AI, and capital flows across your ecosystem.</div>
-            </div>
-          </div>
-          <div style={{textAlign:'center',marginTop:'48px'}}>
-            <Link href="/udb/how-it-works" className={styles.btnText}>See the Full Process →</Link>
+          <p className={styles.sectionSubtext}>UDB follows a disciplined process — from identifying the right principal family in each country, through regulatory structuring, full platform deployment, and vertical ecosystem build-out. Every step is managed by UDB.</p>
+          <div style={{marginTop:'32px'}}>
+            <Link href="/udb/how-it-works" className={styles.btnPrimary}>See How It Works →</Link>
           </div>
         </div>
       </section>

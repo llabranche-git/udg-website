@@ -143,7 +143,7 @@ export default function UDBOwnership() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Cross-Border Settlement</div>
-              <div className={styles.cardText}>Your bank connects to UDB's global financial rails — enabling cross-border settlement, international correspondent banking relationships, and access to $6B+ in processed stablecoin volume through Yellow Card.</div>
+              <div className={styles.cardText}>Your bank connects to UDB's global financial rails — enabling cross-border settlement, international correspondent banking relationships, and access to $6B+ in processed stablecoin volume across 50+ currencies and 30+ blockchain networks.</div>
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>$15M+ Technology Capital Deployed</div>

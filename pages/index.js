@@ -26,10 +26,10 @@ export default function Home() {
         <img src="/assets/hero-poster.jpg" className={styles.heroVideo} alt="" aria-hidden="true" />
         <div className={styles.heroOverlay}>
           <div className={styles.heroWords}>
-            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reimagine.</span>
-            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reinvent.</span>
-            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Redefine.</span>
-            <span style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(28px,5vw,60px)',fontWeight:400,color:'rgba(255,255,255,0.85)',lineHeight:1.2,letterSpacing:'-1px',textAlign:'center',marginTop:'8px'}}>Your Legacy.</span>
+            <span className="heroWord1" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reimagine.</span>
+            <span className="heroWord2" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Reinvent.</span>
+            <span className="heroWord3" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(52px,9vw,120px)',fontWeight:700,color:'#fff',lineHeight:1.0,letterSpacing:'-3px',textAlign:'center'}}>Redefine.</span>
+            <span className="heroWord4" style={{display:'block',fontFamily:"'Archivo Expanded', sans-serif",fontSize:'clamp(28px,5vw,60px)',fontWeight:400,color:'rgba(255,255,255,0.85)',lineHeight:1.2,letterSpacing:'-1px',textAlign:'center',marginTop:'8px'}}>Your Legacy.</span>
           </div>
         </div>
       </section>

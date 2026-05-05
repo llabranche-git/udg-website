@@ -62,8 +62,8 @@ export default function UDBPlatform() {
               <div className={styles.cardText}>Oil, gas, agricultural products, minerals — the economic engine of every market UDB operates in. Your bank settles commodity trades across borders through the same stablecoin rails, eliminating correspondent banking intermediaries and giving your principal family direct control over the financial flows that run through your market's core industries.</div>
             </div>
             <div className={styles.card}>
-              <div className={styles.cardTitle}>Yellow Card — $6B+ Processed</div>
-              <div className={styles.cardText}>Africa's largest stablecoin infrastructure is embedded at the core of every UDB bank. 50+ local payment currencies, 30+ blockchain integrations, $6B+ in processed transaction volume. The infrastructure is proven — UDB brings it directly into your banking platform from day one, with no integration overhead.</div>
+              <div className={styles.cardTitle}>Proven Stablecoin Infrastructure</div>
+              <div className={styles.cardText}>Best-in-class stablecoin infrastructure is embedded at the core of every UDB bank. 50+ local payment currencies, 30+ blockchain integrations, $6B+ in processed transaction volume. The infrastructure is proven at scale — UDB brings it directly into your banking platform from day one, with no integration overhead.</div>
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Compliance Built Into Every Transaction</div>
@@ -141,7 +141,7 @@ export default function UDBPlatform() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Total Population Reach</span>
           <h2 className={styles.sectionHeading}>Banking for 100% of the Country.<br />Not Just Smartphone Owners.</h2>
-          <p className={styles.sectionSubtext}>In some of UDB's target markets, 70% of the population has no smartphone. A bank that requires an app is a bank that ignores the majority of its market. UDB is built differently.</p>
+          <p className={styles.sectionSubtext}>USSD — Unstructured Supplementary Service Data — is a communication protocol built into every mobile network. It powers the *123# menu interactions that billions of people in Africa, Asia, and Latin America use every day for airtime top-ups, balance checks, and mobile money. No smartphone required. No internet required. No app to download. It works on every mobile phone ever made, on any 2G, 3G, or 4G network, wherever a signal reaches. In some of UDB's target markets, 70% of the population has no smartphone — but mobile SIM penetration is over 80%. USSD is the infrastructure that bridges that gap. A UDB bank built with USSD support isn't a smartphone bank that serves 30% of the market. It's a national bank that serves everyone.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Full Banking via USSD — Any Phone, Any Network</div>
