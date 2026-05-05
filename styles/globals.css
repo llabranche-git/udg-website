@@ -261,3 +261,9 @@ img { max-width: 100%; display: block; }
 .heroWord2 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 1.0s; }
 .heroWord3 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 1.5s; }
 .heroWord4 { opacity: 0; animation: heroWordFadeIn 1.5s ease forwards 2.0s; }
+
+/* Carousel slide-in animation */
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}

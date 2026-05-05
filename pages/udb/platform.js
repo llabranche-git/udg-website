@@ -58,6 +58,10 @@ export default function UDBPlatform() {
               <div className={styles.cardText}>Africa is the world's most expensive remittance corridor — $100B+ annually, fees averaging 8% or more. Your bank captures a structural share of this flow at costs 10x lower than legacy operators. Diaspora communities in Europe, the US, and the Gulf send home through your bank, not theirs. A revenue stream that compounds as your customer base grows.</div>
             </div>
             <div className={styles.card}>
+              <div className={styles.cardTitle}>Customer Deposit Protection</div>
+              <div className={styles.cardText}>In markets where currency devaluation is a fact of life, your customers' savings erode every day they sit in a conventional bank account. UDB changes this. Deposits are converted to stablecoin and held in stable digital currency — so customers' balances maintain real value while held in your bank, not nominal value that quietly shrinks as the local currency moves. FX conversion happens at a defined point, at a known rate. The value in between is protected.</div>
+            </div>
+            <div className={styles.card}>
               <div className={styles.cardTitle}>Commodities &amp; Trade Settlement</div>
               <div className={styles.cardText}>Oil, gas, agricultural products, minerals — the economic engine of every market UDB operates in. Your bank settles commodity trades across borders through the same stablecoin rails, eliminating correspondent banking intermediaries and giving your principal family direct control over the financial flows that run through your market's core industries.</div>
             </div>

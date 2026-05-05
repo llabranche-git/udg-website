@@ -8,7 +8,7 @@ const heroSlides = [
   {
     label: 'Ownership',
     headline: 'Own the Modern Digital Bank in Your Market.',
-    sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team to run it.',
+    sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team.',
     image: '/assets/udb-hero.jpg',
     link: '/udb/ownership',
     cta: 'Your Ownership',
@@ -16,7 +16,7 @@ const heroSlides = [
   {
     label: 'Platform Scale',
     headline: 'Banking Infrastructure for a Billion People.',
-    sub: 'Architected for the scale of an entire continent. 150M+ customers per bank. A billion-person platform across all deployments.',
+    sub: 'Architected for the scale of a continent. 150M+ customers per bank. A billion-person platform across all deployments.',
     image: '/assets/inf3.jpg',
     link: '/udb/platform',
     cta: 'Explore the Platform',
@@ -24,7 +24,7 @@ const heroSlides = [
   {
     label: 'Digital Currency',
     headline: 'Stable Digital Currency. Built Into Every Bank.',
-    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, and commodity settlement — all in stable value.',
+    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value.',
     image: '/assets/inf9.jpg',
     link: '/udb/platform',
     cta: 'Explore the Platform',
@@ -48,44 +48,16 @@ const heroSlides = [
   {
     label: 'Security & Compliance',
     headline: 'Born Compliant. Stays Compliant.',
-    sub: '112 standards, 80+ unified controls, AML, FATF Travel Rule, and Tier-1 certifications — built in from day one.',
+    sub: '112 standards. 80+ unified controls. AML, FATF Travel Rule, and Tier-1 certifications — built in from day one.',
     image: '/assets/inf4.jpg',
     link: '/udb/security',
     cta: 'Security & Compliance',
   },
 ]
 
-function HeroCarousel() {
-  const [active, setActive] = useState(0)
-  const [fading, setFading] = useState(false)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setFading(true)
-      setTimeout(() => {
-        setActive(prev => (prev + 1) % heroSlides.length)
-        setFading(false)
-      }, 500)
-    }, 5500)
-    return () => clearInterval(timer)
-  }, [])
-
-  const goTo = (idx) => {
-    if (idx === active) return
-    setFading(true)
-    setTimeout(() => {
-      setActive(idx)
-      setFading(false)
-    }, 500)
-  }
-
-  const slide = heroSlides[active]
-
+function SlideContent({ slide, active, goTo }) {
   return (
-    <section
-      className={`${styles.heroCarousel} ${fading ? styles.heroCarouselFading : ''}`}
-      style={{ backgroundImage: `url(${slide.image})` }}
-    >
+    <>
       <div className={styles.heroCarouselOverlay} />
       <div className={styles.heroCarouselContent}>
         <div className={styles.heroCarouselLeft}>
@@ -107,7 +79,58 @@ function HeroCarousel() {
           </div>
         </div>
       </div>
-    </section>
+    </>
+  )
+}
+
+function HeroCarousel() {
+  const [active, setActive] = useState(0)
+  const [next, setNext] = useState(null)
+  const [sliding, setSliding] = useState(false)
+
+  const advance = (nextIdx) => {
+    if (sliding) return
+    setNext(nextIdx)
+    setSliding(true)
+    setTimeout(() => {
+      setActive(nextIdx)
+      setNext(null)
+      setSliding(false)
+    }, 550)
+  }
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      advance((active + 1) % heroSlides.length)
+    }, 5500)
+    return () => clearInterval(timer)
+  }, [active, sliding])
+
+  const goTo = (idx) => {
+    if (idx === active) return
+    advance(idx)
+  }
+
+  return (
+    <div className={styles.heroCarouselWrap}>
+      {/* Current slide — in flow, determines height */}
+      <div
+        className={styles.heroSlide}
+        style={{ backgroundImage: `url(${heroSlides[active].image})` }}
+      >
+        <SlideContent slide={heroSlides[active]} active={active} goTo={goTo} />
+      </div>
+      {/* Incoming slide — covers from right */}
+      {sliding && next !== null && (
+        <div
+          key={next}
+          className={`${styles.heroSlide} ${styles.heroSlideIncoming}`}
+          style={{ backgroundImage: `url(${heroSlides[next].image})` }}
+        >
+          <SlideContent slide={heroSlides[next]} active={next} goTo={goTo} />
+        </div>
+      )}
+    </div>
   )
 }
 
@@ -203,7 +226,7 @@ export default function UDBOverview() {
           <div className={styles.cardGrid2} style={{marginTop:'48px'}}>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Stablecoin Infrastructure</div>
-              <div className={styles.cardText}>Currency volatility has destroyed more emerging-market bank balance sheets than any other single force. UDB eliminates FX risk at the infrastructure level — your bank never holds currency exposure. The same rails power cross-border transfers, intercontinental remittances at 10x lower cost, and commodity trade settlement across 50+ currencies and 30+ blockchains. Your bank settles in stable value. Always.</div>
+              <div className={styles.cardText}>Two levels of protection. At the bank level: FX exposure is minimized and controlled — conversion happens at a defined point, not as a continuous drain on the balance sheet. At the customer level: deposits are held in stable digital currency, so customers' savings maintain real value while held in your bank. In markets where currency devaluation is a fact of life, that distinction matters enormously. The same rails power cross-border transfers, intercontinental remittances, and commodity trade settlement across 50+ currencies and 30+ blockchains.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Total Population Reach via USSD</div>

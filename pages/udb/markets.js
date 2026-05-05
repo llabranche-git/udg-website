@@ -49,7 +49,7 @@ export default function UDBMarkets() {
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={`${styles.regionCard} ${styles.africa}`}>
               <div className={styles.regionName}>Sub-Saharan Africa</div>
-              <div className={styles.regionText}>The world's largest unbanked population and the most expensive remittance corridor on earth — $100B+ annually at fees averaging 8%. UDB's stablecoin rails allow your bank to capture diaspora remittance flows from Europe, the US, and the Gulf at 10x lower cost than legacy operators. $1T+ in annual mobile money transactions already. Cross-border commodity settlement for oil, gas, and agricultural products runs through the same rails. UDB is live in Nigeria — the continent's largest economy — with Angola and Zambia in active structuring.</div>
+              <div className={styles.regionText}>The world's largest unbanked population and the most expensive remittance corridor on earth — $100B+ annually at fees averaging 8%. Your bank captures diaspora remittance flows at 10x lower cost than legacy operators. At the customer level, stablecoin-backed deposits protect savings from naira, cedi, and kwanza volatility — in markets where local currency devaluation has historically wiped out household savings, that is a material advantage over every other bank in the country. $1T+ in annual mobile money transactions already. Cross-border commodity settlement runs through the same rails. UDB is live in Nigeria — the continent's largest economy — with Angola and Zambia in active structuring.</div>
               <div className={styles.regionMarkets}>Active: Nigeria (Live) · Angola · Zambia · Ethiopia · 12+ more</div>
             </div>
             <div className={`${styles.regionCard} ${styles.mena}`}>
@@ -64,7 +64,7 @@ export default function UDBMarkets() {
             </div>
             <div className={`${styles.regionCard} ${styles.latam}`}>
               <div className={styles.regionName}>Latin America</div>
-              <div className={styles.regionText}>Hyperinflation, currency devaluation, and dollar-denominated debt have made currency stability the defining financial need for hundreds of millions of Latin Americans. UDB's stablecoin rails provide dollar-equivalent settlement without requiring dollar accounts — giving your customers protection from local currency decay. Cross-border commerce between Brazil, Argentina, Colombia, and the US runs through the same infrastructure, capturing bilateral trade flows that currently move through expensive and opaque correspondent networks.</div>
+              <div className={styles.regionText}>Hyperinflation and currency devaluation have made savings preservation the defining financial need for hundreds of millions of Latin Americans. UDB's stablecoin infrastructure means deposits held in your bank maintain real value — customers aren't watching their balances erode in real terms while the peso or bolivar moves. FX conversion happens at a controlled point, not as an ongoing drain. Dollar-equivalent stability without requiring dollar accounts. Cross-border commerce between Brazil, Argentina, Colombia, and the US runs through the same infrastructure, capturing bilateral trade flows that currently move through expensive and opaque correspondent networks.</div>
               <div className={styles.regionMarkets}>Active: Caribbean markets in pipeline</div>
             </div>
           </div>
