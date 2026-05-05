@@ -303,7 +303,7 @@
 /* ── Full-bleed carousel hero ─────────────────────────── */
 .heroCarousel {
   position: relative;
-  min-height: 480px;
+  min-height: 420px;
   background-color: #0A1628;
   background-position: center;
   background-size: cover;
@@ -328,11 +328,12 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 60px max(48px, calc((100vw - 1280px) / 2 + 48px));
+  padding: 60px 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
   align-items: center;
+  box-sizing: border-box;
 }
 .heroCarouselLeft {
   display: flex;
@@ -1225,6 +1226,8 @@
   .udbSection { padding: 64px 0; }
   .cardGrid3, .cardGrid2 { grid-template-columns: 1fr; }
   .innerBanner { padding: 120px 0 48px; }
+  .udbContainer { padding: 0 24px; }
+  .heroCarouselContent { padding: 40px 24px; grid-template-columns: 1fr; gap: 20px; }
   .formCard { padding: 32px 24px; }
   .udbNavLinks { display: none; }
   .hamburger { display: flex; }

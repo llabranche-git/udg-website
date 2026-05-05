@@ -39,7 +39,7 @@ const heroSlides = [
   },
   {
     label: '200+ Languages',
-    headline: 'Your Bank Speaks Every Language.',
+    headline: 'The Population Speaks Every Language. Your Bank Will Too.',
     sub: 'AI-powered localisation in 200+ languages — not just translation, but full cultural adaptation at the platform level.',
     image: '/assets/inf12.jpg',
     link: '/udb/platform',
