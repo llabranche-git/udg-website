@@ -23,8 +23,8 @@ function UDBNavbar() {
     { href: '/udb', label: 'Overview' },
     { href: '/udb/platform', label: 'Platform' },
     { href: '/udb/how-it-works', label: 'How It Works' },
-    { href: '/udb/security', label: 'Security & Compliance' },
     { href: '/udb/ownership', label: 'Your Ownership' },
+    { href: '/udb/security', label: 'Security & Compliance' },
   ]
 
   return (

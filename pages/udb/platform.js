@@ -145,7 +145,7 @@ export default function UDBPlatform() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Total Population Reach</span>
           <h2 className={styles.sectionHeading}>Banking for 100% of the Country.<br />Not Just Smartphone Owners.</h2>
-          <p className={styles.sectionSubtext}>USSD — Unstructured Supplementary Service Data — is a communication protocol built into every mobile network. It powers the *123# menu interactions that billions of people in Africa, Asia, and Latin America use every day for airtime top-ups, balance checks, and mobile money. No smartphone required. No internet required. No app to download. It works on every mobile phone ever made, on any 2G, 3G, or 4G network, wherever a signal reaches. In some of UDB's target markets, 70% of the population has no smartphone — but mobile SIM penetration is over 80%. USSD is the infrastructure that bridges that gap. A UDB bank built with USSD support isn't a smartphone bank that serves 30% of the market. It's a national bank that serves everyone.</p>
+          <p className={styles.sectionSubtext}>USSD — Unstructured Supplementary Service Data — has been on every mobile phone in Africa and Asia for decades. It's the *123# menu people already use for airtime top-ups, balance checks, and mobile money. The technology itself is nothing new. What's new is what UDB puts behind it: an AI banking engine that turns a simple text menu into a full banking interaction — account opening, payments, credit applications, financial literacy guidance — delivered through the most basic feature phone on any 2G network. No smartphone required. No app to download. No data plan. The same familiar interface your customers have used their whole lives, now powered by intelligence they've never had access to before. In markets where 70% of the population has no smartphone but mobile SIM penetration is over 80%, this isn't a feature. It's the entire market.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Full Banking via USSD — Any Phone, Any Network</div>
@@ -198,12 +198,12 @@ export default function UDBPlatform() {
       <section className={`${styles.udbSection} ${styles.darkSection}`}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Built-In Financial &amp; Digital Literacy</span>
-          <h2 className={styles.sectionHeading}>The Bank Comes With<br />a Literacy Component.</h2>
-          <p className={styles.sectionSubtext}>Across emerging markets, large segments of the population have never interacted with a formal bank. Not because they lack the need — but because no one has met them where they are. Limited financial literacy means people don't understand what a bank account does, how credit works, or how to protect themselves from financial risk. This isn't a marginal issue. In some markets, it describes the majority of the population.</p>
+          <h2 className={styles.sectionHeading}>Literacy Isn't Charity. It's Your Biggest Growth Engine.</h2>
+          <p className={styles.sectionSubtext}>Financial exclusion in emerging markets isn't just a social problem — it's a business opportunity that every other bank is leaving on the table. Large segments of the population have never interacted with a formal financial institution, not because they lack the need, but because no one has met them where they are. UDB's built-in literacy program changes the equation: address the barrier, and the barrier becomes the pipeline. Every person who learns to bank becomes a lifetime customer. Every lifetime customer compounds into long-term revenue. Literacy is the adoption strategy.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Curated by World-Renowned Universities</div>
-              <div className={styles.cardText}>Every UDB bank comes with a financial and digital literacy curriculum developed in collaboration with globally respected academic institutions, including globally respected academic institutions. The content is grounded in research on how populations in emerging markets learn financial concepts — not adapted from Western curricula, but built from the ground up for the realities of your market.</div>
+              <div className={styles.cardText}>Every UDB bank comes with a financial and digital literacy curriculum developed in collaboration with globally respected academic institutions. The content is grounded in research on how populations in emerging markets learn financial concepts — not adapted from Western curricula, but built from the ground up for the realities of your market.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Created Once. Replicated Across 200+ Languages.</div>
@@ -215,7 +215,7 @@ export default function UDBPlatform() {
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Better Customers. Better Bank.</div>
-              <div className={styles.cardText}>As customers become more financially literate, the quality of your loan book improves automatically. Default rates decrease, sustainable loan sizes grow, and customer lifetime value compounds — reaching ~$110 per customer and targeting $2.33B at 10M users. The literacy programme is not a cost. It is a structural investment in the long-term performance of your bank.</div>
+              <div className={styles.cardText}>As customers become more financially literate, your bank gets better. Default rates fall. Sustainable loan sizes grow. Customer retention extends. Every person the literacy program enables is a new lifetime customer — and at scale, that compounds into a material long-term revenue advantage. The programme is not a cost centre. It is the most efficient customer acquisition strategy your bank has.</div>
             </div>
           </div>
         </div>

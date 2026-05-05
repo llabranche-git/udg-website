@@ -21,7 +21,7 @@ export default function UDBOwnership() {
       <section className={`${styles.udbSection} ${styles.altSection}`}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Two Pathways</span>
-          <h2 className={styles.sectionHeading}>Whether You're Starting Fresh or Already in the Game</h2>
+          <h2 className={styles.sectionHeading}>Whether You're Starting Fresh or Already in the Industry</h2>
           <p className={styles.sectionSubtext}>UDB works with two distinct types of principal families. The platform, the partnership model, and the ownership structure are designed to serve both — with equal depth and equal exclusivity.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card} style={{borderTop:'4px solid #1A6FDB'}}>
@@ -134,7 +134,7 @@ export default function UDBOwnership() {
       <section className={styles.udbSection}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Broader Network</span>
-          <h2 className={styles.sectionHeading}>Backed by the USG Network Across 110+ Countries</h2>
+          <h2 className={styles.sectionHeading}>Unified State Group Network Across 110 Countries</h2>
           <p className={styles.sectionSubtext}>Unified Digital Banking is a subsidiary of Unified State Group — a global organization with active trust and connectivity to sovereign leadership across 110+ countries and 800+ family offices. Your bank enters a network, not just a platform.</p>
           <div className={styles.cardGrid3} style={{marginTop:'40px'}}>
             <div className={styles.card}>
@@ -146,8 +146,8 @@ export default function UDBOwnership() {
               <div className={styles.cardText}>Your bank connects to UDB's global financial rails — enabling cross-border settlement, international correspondent banking relationships, and access to $6B+ in processed stablecoin volume across 50+ currencies and 30+ blockchain networks.</div>
             </div>
             <div className={styles.card}>
-              <div className={styles.cardTitle}>$15M+ Technology Capital Deployed</div>
-              <div className={styles.cardText}>The platform you're deploying represents over $15M in technology capital already built, tested, and operating live. You are not funding a build — you are entering a proven, capitalized system.</div>
+              <div className={styles.cardTitle}>Proven, Capitalized Platform</div>
+              <div className={styles.cardText}>The platform you're deploying has been built, tested, and is operating live. You are not funding a build — you are entering a proven system that is ready to deploy in your market.</div>
             </div>
           </div>
         </div>

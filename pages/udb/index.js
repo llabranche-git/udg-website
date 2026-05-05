@@ -32,7 +32,7 @@ const heroSlides = [
   {
     label: 'Total Population Reach',
     headline: 'Every Person. Every Phone. Every Market.',
-    sub: 'USSD banking on any mobile phone, any 2G network, no smartphone required. Your TAM is every mobile subscriber in the country.',
+    sub: 'USSD has been on every phone in Africa and Asia for decades — the same *123# menus people use for airtime top-ups. UDB puts an AI banking engine behind it. Familiar technology, intelligent backend. Real banking services and financial literacy delivered to every mobile subscriber, no smartphone or data plan required.',
     image: '/assets/inf10.jpg',
     link: '/udb/platform',
     cta: 'Explore the Platform',
