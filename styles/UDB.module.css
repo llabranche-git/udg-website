@@ -1278,5 +1278,78 @@
   .dashCards { grid-template-columns: 1fr; }
 }
 
+/* ─── Process Timeline ───────────────────────────────────────────────────── */
+.processTimeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  margin-top: 56px;
+  position: relative;
+}
+.processStage {
+  padding: 0 24px 0 0;
+}
+.processNodeWrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.processNode {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #1A6FDB;
+  color: #fff;
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.processConnector {
+  flex: 1;
+  height: 2px;
+  background: #E2E8F0;
+  margin-left: 12px;
+}
+.processStageTitle {
+  font-family: 'Archivo Expanded', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0A1628;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.processStageText {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748B;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.processMilestones {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-top: 1px solid #E2E8F0;
+  padding-top: 16px;
+}
+.processMilestone {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1A6FDB;
+  line-height: 1.4;
+}
 
-
+@media (max-width: 900px) {
+  .processTimeline { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .processConnector { display: none; }
+}
+@media (max-width: 600px) {
+  .processTimeline { grid-template-columns: 1fr; gap: 40px; }
+}

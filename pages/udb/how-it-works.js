@@ -16,32 +16,72 @@ export default function UDBHowItWorks() {
         </div>
       </section>
 
-      {/* 4 Steps */}
+      {/* 4 Stages — Horizontal Timeline */}
       <section className={styles.udbSection}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Four Stages</span>
-          <h2 className={styles.sectionHeading}>The Path to Your Bank</h2>
-          <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
-            <div className={styles.card}>
-              <div className={styles.stageNumber}>01</div>
-              <div className={styles.stageTitle}>Identify &amp; Qualify</div>
-              <div className={styles.stageText}>We identify the single strategic principal per country — evaluating political and commercial standing, track record at scale, sovereign alignment, and long-horizon vision. One country. One family. No exceptions.</div>
+          <h2 className={styles.sectionHeading}>From First Conversation to Operating Bank</h2>
+          <div className={styles.processTimeline}>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}>
+                <div className={styles.processNode}>01</div>
+                <div className={styles.processConnector} />
+              </div>
+              <div className={styles.processStageTitle}>Qualify &amp; Engage</div>
+              <div className={styles.processStageText}>Mutual qualification conversation. Scope confirmed. NDA executed and portal access granted.</div>
+              <div className={styles.processMilestones}>
+                <div className={styles.processMilestone}>✦ NDA signed</div>
+                <div className={styles.processMilestone}>✦ Portal access</div>
+                <div className={styles.processMilestone}>✦ Intake questionnaire</div>
+                <div className={styles.processMilestone}>✦ AI proposal generated</div>
+              </div>
             </div>
-            <div className={styles.card}>
-              <div className={styles.stageNumber}>02</div>
-              <div className={styles.stageTitle}>Analyze &amp; Validate</div>
-              <div className={styles.stageText}>Together we examine market structure and demographics, map the regulatory pathway, assess sovereign alignment, and confirm capital and governance fit. Every deployment begins with certainty, not hope.</div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}>
+                <div className={styles.processNode}>02</div>
+                <div className={styles.processConnector} />
+              </div>
+              <div className={styles.processStageTitle}>Proposal &amp; Alignment</div>
+              <div className={styles.processStageText}>UDB presents a customized proposal built on your market, your ecosystem, and your priorities. Discussion and refinement until commercial terms are agreed.</div>
+              <div className={styles.processMilestones}>
+                <div className={styles.processMilestone}>✦ Proposal presented</div>
+                <div className={styles.processMilestone}>✦ Tier confirmed</div>
+                <div className={styles.processMilestone}>✦ Structure agreed</div>
+                <div className={styles.processMilestone}>✦ Key terms aligned</div>
+              </div>
             </div>
-            <div className={styles.card}>
-              <div className={styles.stageNumber}>03</div>
-              <div className={styles.stageTitle}>Architect the Framework</div>
-              <div className={styles.stageText}>We structure the exclusive country framework: banking license strategy, infrastructure deployment plan, governance design, and ownership structure. You know exactly what you own before a line of code is deployed.</div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}>
+                <div className={styles.processNode}>03</div>
+                <div className={styles.processConnector} />
+              </div>
+              <div className={styles.processStageTitle}>Term Sheet &amp; Due Diligence</div>
+              <div className={styles.processStageText}>Term Sheet issued and reviewed by both parties. Mutual due diligence conducted. Regulatory pathway formally confirmed. Term Sheet executed.</div>
+              <div className={styles.processMilestones}>
+                <div className={styles.processMilestone}>✦ Term Sheet issued</div>
+                <div className={styles.processMilestone}>✦ Legal review</div>
+                <div className={styles.processMilestone}>✦ Due diligence</div>
+                <div className={styles.processMilestone}>✦ Term Sheet signed</div>
+              </div>
             </div>
-            <div className={styles.card}>
-              <div className={styles.stageNumber}>04</div>
-              <div className={styles.stageTitle}>Deploy &amp; Operate</div>
-              <div className={styles.stageText}>The full digital banking stack launches: core engine, mobile channels, payments infrastructure, KYC/AML, satellite connectivity, and 24/7 managed operations. UDB runs the platform. You run the relationship.</div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}>
+                <div className={styles.processNode}>04</div>
+              </div>
+              <div className={styles.processStageTitle}>Contract &amp; Deployment</div>
+              <div className={styles.processStageText}>Full agreements executed — MSA, Bank Ownership, and Implementation. Milestone 1 payment received. Deployment begins.</div>
+              <div className={styles.processMilestones}>
+                <div className={styles.processMilestone}>✦ Contracts executed</div>
+                <div className={styles.processMilestone}>✦ Milestone 1 payment</div>
+                <div className={styles.processMilestone}>✦ License application</div>
+                <div className={styles.processMilestone}>✦ Deployment begins</div>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
