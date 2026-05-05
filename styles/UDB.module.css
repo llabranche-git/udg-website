@@ -390,9 +390,14 @@
 .heroDotsRow {
   grid-column: 1 / -1;
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 24px;
+}
+.heroDotsGroup {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 .heroDot {
   width: 8px;

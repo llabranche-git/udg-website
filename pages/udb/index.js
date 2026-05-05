@@ -67,9 +67,9 @@ function SlideContent({ slide, active, goTo }) {
         </div>
         <div className={styles.heroCarouselRight}>
           <p className={styles.heroCarouselSub}>{slide.sub}</p>
-          <Link href={slide.link} className={styles.udbHeroBtnText}>{slide.cta} →</Link>
         </div>
         <div className={styles.heroDotsRow}>
+          <div className={styles.heroDotsGroup}>
           {heroSlides.map((_, i) => (
             <button
               key={i}
@@ -78,6 +78,8 @@ function SlideContent({ slide, active, goTo }) {
               aria-label={`Slide ${i + 1}`}
             />
           ))}
+          </div>
+          <Link href={slide.link} className={styles.udbHeroBtnText}>{slide.cta} →</Link>
         </div>
       </div>
     </>
@@ -198,7 +200,7 @@ export default function UDBOverview() {
 
 
       {/* Two Pathways */}
-      <section className={`${styles.udbSection} ${styles.altSection}`}>
+      <section className={`${styles.udbSection} ${styles.altSection}`} style={{paddingTop:'48px'}}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Two Pathways to Partnership</span>
           <h2 className={styles.sectionHeading}>New to Banking or Already in It — UDB Is Built for Both</h2>
