@@ -31,10 +31,11 @@ export default function UDBHowItWorks() {
               <div className={styles.processStageTitle}>Qualify &amp; Engage</div>
               <div className={styles.processStageText}>Mutual qualification conversation. Scope confirmed. NDA executed and portal access granted.</div>
               <div className={styles.processMilestones}>
+                <div className={styles.processMilestone}>✦ Engagement process reviewed</div>
                 <div className={styles.processMilestone}>✦ NDA signed</div>
-                <div className={styles.processMilestone}>✦ Portal access</div>
+                <div className={styles.processMilestone}>✦ Portal access granted</div>
                 <div className={styles.processMilestone}>✦ Intake questionnaire</div>
-                <div className={styles.processMilestone}>✦ AI proposal generated</div>
+                <div className={styles.processMilestone}>✦ Proposal prepared</div>
               </div>
             </div>
 
@@ -48,6 +49,7 @@ export default function UDBHowItWorks() {
               <div className={styles.processMilestones}>
                 <div className={styles.processMilestone}>✦ Proposal presented</div>
                 <div className={styles.processMilestone}>✦ Tier confirmed</div>
+                <div className={styles.processMilestone}>✦ Timeline &amp; costs agreed</div>
                 <div className={styles.processMilestone}>✦ Structure agreed</div>
                 <div className={styles.processMilestone}>✦ Key terms aligned</div>
               </div>

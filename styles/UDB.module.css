@@ -1282,17 +1282,30 @@
 .processTimeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0;
+  gap: 32px;
   margin-top: 56px;
   position: relative;
 }
+.processTimeline::before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 2px;
+  background: #E2E8F0;
+  z-index: 0;
+}
 .processStage {
-  padding: 0 24px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .processNodeWrap {
-  display: flex;
-  align-items: center;
   margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 .processNode {
   width: 48px;
@@ -1306,15 +1319,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
-  z-index: 1;
 }
-.processConnector {
-  flex: 1;
-  height: 2px;
-  background: #E2E8F0;
-  margin-left: 12px;
-}
+.processConnector { display: none; }
 .processStageTitle {
   font-family: 'Archivo Expanded', sans-serif;
   font-size: 15px;
@@ -1337,6 +1343,9 @@
   gap: 8px;
   border-top: 1px solid #E2E8F0;
   padding-top: 16px;
+  width: 100%;
+  text-align: left;
+  margin-top: auto;
 }
 .processMilestone {
   font-family: 'Work Sans', sans-serif;
@@ -1347,9 +1356,9 @@
 }
 
 @media (max-width: 900px) {
-  .processTimeline { grid-template-columns: 1fr 1fr; gap: 40px; }
-  .processConnector { display: none; }
+  .processTimeline { grid-template-columns: 1fr 1fr; }
+  .processTimeline::before { display: none; }
 }
 @media (max-width: 600px) {
-  .processTimeline { grid-template-columns: 1fr; gap: 40px; }
+  .processTimeline { grid-template-columns: 1fr; }
 }
