@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import UDBLayout from '../../components/UDBLayout'
 import styles from '../../styles/UDB.module.css'
 
@@ -85,27 +85,20 @@ function SlideContent({ slide, active, goTo }) {
 
 function HeroCarousel() {
   const [active, setActive] = useState(0)
-  const [incoming, setIncoming] = useState(null)
-  const [incomingReady, setIncomingReady] = useState(false)
-  const sliding = incoming !== null
+  const [animating, setAnimating] = useState(false)
+  const incomingRef = React.useRef(-1)
 
   const advance = (nextIdx) => {
-    if (sliding) return
-    setIncoming(nextIdx)
-    setIncomingReady(false)
-    // Double RAF: paint at translateX(100%) first, then trigger transition
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        setIncomingReady(true)
-      })
-    })
+    if (animating) return
+    incomingRef.current = nextIdx
+    setAnimating(true)
   }
 
-  const handleTransitionEnd = () => {
-    if (incoming === null) return
-    setActive(incoming)
-    setIncoming(null)
-    setIncomingReady(false)
+  const handleTransitionEnd = (i) => {
+    if (i !== incomingRef.current) return
+    setActive(incomingRef.current)
+    incomingRef.current = -1
+    setAnimating(false)
   }
 
   useEffect(() => {
@@ -113,40 +106,58 @@ function HeroCarousel() {
       advance((active + 1) % heroSlides.length)
     }, 5500)
     return () => clearInterval(timer)
-  }, [active, sliding])
+  }, [active, animating])
 
   const goTo = (idx) => {
     if (idx === active) return
     advance(idx)
   }
 
+  // All slides always in the DOM (stable DOM nodes = transitions fire correctly)
+  // active slide: translateX(0), z=2, no transition (stays put, gets covered)
+  // incoming slide: was at translateX(100%) with transition on, now moves to translateX(0) → transition fires
+  // all others: translateX(100%), transition always on, z=1
+  const getSlideStyle = (i) => {
+    const inc = incomingRef.current
+    if (i === inc && animating) {
+      return {
+        transform: 'translateX(0)',
+        transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
+        zIndex: 3,
+      }
+    }
+    if (i === active) {
+      return {
+        transform: 'translateX(0)',
+        transition: 'none',
+        zIndex: 2,
+      }
+    }
+    return {
+      transform: 'translateX(100%)',
+      transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
+      zIndex: 1,
+    }
+  }
+
   return (
     <div className={styles.heroCarouselWrap}>
-      {/* Current slide — always visible behind */}
-      <div
-        className={styles.heroSlideBase}
-        style={{ backgroundImage: `url(${heroSlides[active].image})` }}
-      >
-        <SlideContent slide={heroSlides[active]} active={active} goTo={goTo} />
-      </div>
-      {/* Incoming slide — slides in from right on top */}
-      {incoming !== null && (
+      {heroSlides.map((slide, i) => (
         <div
+          key={i}
           className={styles.heroSlideBase}
           style={{
-            backgroundImage: `url(${heroSlides[incoming].image})`,
             position: 'absolute',
             inset: 0,
-            transform: incomingReady ? 'translateX(0)' : 'translateX(100%)',
-            transition: incomingReady ? 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)' : 'none',
-            zIndex: 3,
+            backgroundImage: `url(${slide.image})`,
             willChange: 'transform',
+            ...getSlideStyle(i),
           }}
-          onTransitionEnd={handleTransitionEnd}
+          onTransitionEnd={() => handleTransitionEnd(i)}
         >
-          <SlideContent slide={heroSlides[incoming]} active={incoming} goTo={goTo} />
+          <SlideContent slide={slide} active={active} goTo={goTo} />
         </div>
-      )}
+      ))}
     </div>
   )
 }
