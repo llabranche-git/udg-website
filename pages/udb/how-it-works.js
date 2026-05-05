@@ -55,6 +55,7 @@ export default function UDBHowItWorks() {
               <div className={styles.processMilestone}>✦ Proposal presented</div>
               <div className={styles.processMilestone}>✦ Tier confirmed</div>
               <div className={styles.processMilestone}>✦ Timeline &amp; costs agreed</div>
+              <div className={styles.processMilestone}>✦ Regulatory pathway mapped</div>
               <div className={styles.processMilestone}>✦ Structure agreed</div>
               <div className={styles.processMilestone}>✦ Key terms aligned</div>
             </div>
@@ -62,6 +63,7 @@ export default function UDBHowItWorks() {
               <div className={styles.processMilestone}>✦ Term Sheet issued</div>
               <div className={styles.processMilestone}>✦ Legal review</div>
               <div className={styles.processMilestone}>✦ Due diligence</div>
+              <div className={styles.processMilestone}>✦ Regulatory pathway confirmed</div>
               <div className={styles.processMilestone}>✦ Term Sheet signed</div>
             </div>
             <div className={styles.processMilestones}>

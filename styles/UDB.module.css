@@ -1282,7 +1282,8 @@
 .processTimeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  column-gap: 32px;
+  row-gap: 16px;
   margin-top: 56px;
   position: relative;
 }
@@ -1338,7 +1339,7 @@
   font-weight: 400;
   color: #64748B;
   line-height: 1.6;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 .processMilestones {
