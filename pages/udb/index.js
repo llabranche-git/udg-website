@@ -7,39 +7,51 @@ import styles from '../../styles/UDB.module.css'
 const heroSlides = [
   {
     label: 'Ownership',
-    headline: 'Own the Modern Digital Bank\nin Your Market.',
+    headline: 'Own the Modern Digital Bank in Your Market.',
     sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team to run it.',
     image: '/assets/udb-hero.jpg',
+    link: '/udb/ownership',
+    cta: 'Your Ownership',
   },
   {
     label: 'Platform Scale',
-    headline: 'Banking Infrastructure\nfor a Billion People.',
+    headline: 'Banking Infrastructure for a Billion People.',
     sub: 'Architected for the scale of an entire continent. 150M+ customers per bank. A billion-person platform across all deployments.',
     image: '/assets/inf3.jpg',
+    link: '/udb/platform',
+    cta: 'Explore the Platform',
   },
   {
     label: 'Digital Currency',
-    headline: 'Stable Digital Currency.\nBuilt Into Every Bank.',
-    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value.',
+    headline: 'Stable Digital Currency. Built Into Every Bank.',
+    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, and commodity settlement — all in stable value.',
     image: '/assets/inf9.jpg',
+    link: '/udb/platform',
+    cta: 'Explore the Platform',
   },
   {
     label: 'Total Population Reach',
-    headline: 'Every Customer.\nEvery Phone. Every Market.',
+    headline: 'Every Customer. Every Phone. Every Market.',
     sub: 'USSD banking on any mobile phone, any 2G network, no smartphone required. Your TAM is every mobile subscriber in the country.',
     image: '/assets/inf10.jpg',
+    link: '/udb/platform',
+    cta: 'Explore the Platform',
   },
   {
     label: '200+ Languages',
-    headline: 'Your Bank Speaks\nEvery Language.',
+    headline: 'Your Bank Speaks Every Language.',
     sub: 'AI-powered localisation in 200+ languages — not just translation, but full cultural adaptation at the platform level.',
     image: '/assets/inf12.jpg',
+    link: '/udb/platform',
+    cta: 'Explore the Platform',
   },
   {
     label: 'Security & Compliance',
-    headline: 'Born Compliant.\nStays Compliant.',
-    sub: '112 standards, 80+ unified controls, AML, FATF Travel Rule, and Tier-1 international certifications — built in from day one.',
+    headline: 'Born Compliant. Stays Compliant.',
+    sub: '112 standards, 80+ unified controls, AML, FATF Travel Rule, and Tier-1 certifications — built in from day one.',
     image: '/assets/inf4.jpg',
+    link: '/udb/security',
+    cta: 'Security & Compliance',
   },
 ]
 
@@ -76,26 +88,23 @@ function HeroCarousel() {
     >
       <div className={styles.heroCarouselOverlay} />
       <div className={styles.heroCarouselContent}>
-        <span className={styles.heroCarouselLabel}>{slide.label}</span>
-        <h1 className={styles.heroCarouselHeadline}>
-          {slide.headline.split('\n').map((line, i, arr) => (
-            <span key={i}>{line}{i < arr.length - 1 && <br />}</span>
-          ))}
-        </h1>
-        <p className={styles.heroCarouselSub}>{slide.sub}</p>
-        <div className={styles.heroCarouselCtas}>
-          <Link href="/udb/apply" className={styles.udbHeroBtnPrimary}>Apply for Partnership</Link>
-          <Link href="/udb/platform" className={styles.udbHeroBtnText}>See the Platform →</Link>
+        <div className={styles.heroCarouselLeft}>
+          <span className={styles.heroCarouselLabel}>{slide.label}</span>
+          <h1 className={styles.heroCarouselHeadline}>{slide.headline}</h1>
         </div>
-        <div className={styles.heroDots}>
-          {heroSlides.map((_, i) => (
-            <button
-              key={i}
-              className={`${styles.heroDot} ${i === active ? styles.heroDotActive : ''}`}
-              onClick={() => goTo(i)}
-              aria-label={`Slide ${i + 1}`}
-            />
-          ))}
+        <div className={styles.heroCarouselRight}>
+          <p className={styles.heroCarouselSub}>{slide.sub}</p>
+          <Link href={slide.link} className={styles.udbHeroBtnText}>{slide.cta} →</Link>
+          <div className={styles.heroDots} style={{marginTop:'24px'}}>
+            {heroSlides.map((_, i) => (
+              <button
+                key={i}
+                className={`${styles.heroDot} ${i === active ? styles.heroDotActive : ''}`}
+                onClick={() => goTo(i)}
+                aria-label={`Slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
