@@ -96,7 +96,7 @@ function HeroCarousel() {
       setActive(nextIdx)
       setNext(null)
       setSliding(false)
-    }, 550)
+    }, 1050)
   }
 
   useEffect(() => {
@@ -113,23 +113,20 @@ function HeroCarousel() {
 
   return (
     <div className={styles.heroCarouselWrap}>
-      {/* Current slide — in flow, determines height */}
-      <div
-        className={styles.heroSlide}
-        style={{ backgroundImage: `url(${heroSlides[active].image})` }}
-      >
-        <SlideContent slide={heroSlides[active]} active={active} goTo={goTo} />
-      </div>
-      {/* Incoming slide — covers from right */}
-      {sliding && next !== null && (
+      {heroSlides.map((slide, i) => (
         <div
-          key={next}
-          className={`${styles.heroSlide} ${styles.heroSlideIncoming}`}
-          style={{ backgroundImage: `url(${heroSlides[next].image})` }}
+          key={i}
+          className={`${styles.heroSlide} ${
+            i === active && !sliding ? styles.heroSlideActive :
+            i === active && sliding ? styles.heroSlideExiting :
+            i === next && sliding ? styles.heroSlideEntering :
+            styles.heroSlideHidden
+          }`}
+          style={{ backgroundImage: `url(${slide.image})` }}
         >
-          <SlideContent slide={heroSlides[next]} active={next} goTo={goTo} />
+          <SlideContent slide={slide} active={active} goTo={goTo} />
         </div>
-      )}
+      ))}
     </div>
   )
 }
