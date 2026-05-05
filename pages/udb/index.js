@@ -7,43 +7,37 @@ import styles from '../../styles/UDB.module.css'
 const heroSlides = [
   {
     label: 'Ownership',
-    headline: 'Own the Modern Digital Bank
-in Your Market.',
+    headline: 'Own the Modern Digital Bank\nin Your Market.',
     sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team to run it.',
     image: '/assets/udb-hero.jpg',
   },
   {
     label: 'Platform Scale',
-    headline: 'Banking Infrastructure
-for a Billion People.',
+    headline: 'Banking Infrastructure\nfor a Billion People.',
     sub: 'Architected for the scale of an entire continent. 150M+ customers per bank. A billion-person platform across all deployments.',
     image: '/assets/inf3.jpg',
   },
   {
     label: 'Digital Currency',
-    headline: 'Stable Digital Currency.
-Built Into Every Bank.',
+    headline: 'Stable Digital Currency.\nBuilt Into Every Bank.',
     sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value.',
     image: '/assets/inf9.jpg',
   },
   {
     label: 'Total Population Reach',
-    headline: 'Every Customer.
-Every Phone. Every Market.',
+    headline: 'Every Customer.\nEvery Phone. Every Market.',
     sub: 'USSD banking on any mobile phone, any 2G network, no smartphone required. Your TAM is every mobile subscriber in the country.',
     image: '/assets/inf10.jpg',
   },
   {
     label: '200+ Languages',
-    headline: 'Your Bank Speaks
-Every Language.',
+    headline: 'Your Bank Speaks\nEvery Language.',
     sub: 'AI-powered localisation in 200+ languages — not just translation, but full cultural adaptation at the platform level.',
     image: '/assets/inf12.jpg',
   },
   {
     label: 'Security & Compliance',
-    headline: 'Born Compliant.
-Stays Compliant.',
+    headline: 'Born Compliant.\nStays Compliant.',
     sub: '112 standards, 80+ unified controls, AML, FATF Travel Rule, and Tier-1 international certifications — built in from day one.',
     image: '/assets/inf4.jpg',
   },
