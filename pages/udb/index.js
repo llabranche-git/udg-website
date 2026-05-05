@@ -197,7 +197,7 @@ export default function UDBOverview() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Cloud &amp; Connectivity</div>
-              <div className={styles.cardText}>Built on AWS global infrastructure with integrated satellite networking. 100% uptime guaranteed in remote areas — no dependence on terrestrial cable.</div>
+              <div className={styles.cardText}>Built on enterprise-grade global cloud infrastructure with integrated satellite networking. 100% uptime guaranteed in remote areas — no dependence on terrestrial cable.</div>
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Global Financial Rails</div>
@@ -231,11 +231,11 @@ export default function UDBOverview() {
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>200+ Language Support</div>
-              <div className={styles.cardText}>Language barriers have excluded hundreds of millions of people from formal banking. UDB's Lara AI platform delivers professional, AI-driven interfaces in 200+ languages — with human-in-the-loop review to ensure cultural accuracy. Amazon Connect powers multi-lingual call centers. Whether your market speaks Hausa, Swahili, Arabic, Tagalog, or Portuguese, your bank speaks to every customer in their language.</div>
+              <div className={styles.cardText}>Language barriers have excluded hundreds of millions of people from formal banking. UDB's AI-driven language platform delivers professional interfaces in 200+ languages — with human-in-the-loop review to ensure cultural accuracy, powering multi-lingual call centers too. Whether your market speaks Hausa, Swahili, Arabic, Tagalog, or Portuguese, your bank speaks to every customer in their language.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Built-In Financial &amp; Digital Literacy</div>
-              <div className={styles.cardText}>Across emerging markets, large segments of the population have never interacted with a formal bank. UDB includes a literacy curriculum — curated by world-renowned universities including Oxford — built directly into the platform. Created once, replicated across 200+ languages automatically, delivered via smartphone and USSD to every customer regardless of device. Your bank doesn't just open accounts. It builds the financial capability of your entire market.</div>
+              <div className={styles.cardText}>Across emerging markets, large segments of the population have never interacted with a formal bank. UDB includes a literacy curriculum — curated by world-renowned academic institutions — built directly into the platform. Created once, replicated across 200+ languages automatically, delivered via smartphone and USSD to every customer regardless of device. Your bank doesn't just open accounts. It builds the financial capability of your entire market.</div>
             </div>
           </div>
         </div>

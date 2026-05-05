@@ -36,7 +36,7 @@ export default function SecurityCompliance() {
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>112 Standards, 80+ Unified Controls</div>
-              <div className={styles.cardText}>UDB maps 13+ compliance frameworks — Nigerian CBN requirements, EU banking directives, FATF guidelines, international AML standards — into a single high-performance architecture. The Common Control Framework eliminates the fragmentation that makes conventional compliance so costly. When a new market has different requirements, it is a configuration update, not a rebuild.</div>
+              <div className={styles.cardText}>UDB maps 13+ compliance frameworks — Nigerian central bank requirements, EU banking directives, FATF guidelines, international AML standards — into a single high-performance architecture. The Common Control Framework eliminates the fragmentation that makes conventional compliance so costly. When a new market has different requirements, it is a configuration update, not a rebuild.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Design Once, Comply to Many</div>
@@ -116,8 +116,8 @@ export default function SecurityCompliance() {
           <p className={styles.sectionSubtext}>For a principal family deploying a bank, security failures are not IT problems — they are reputational, regulatory, and financial catastrophes. UDB's security operations model eliminates the risk at the source.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.darkCard}>
-              <div className={styles.cardTitle}>AWS Global Security Infrastructure</div>
-              <div className={styles.cardText}>UDB runs on AWS — the same infrastructure that powers the world's largest financial institutions. SOC controls, PCI security, 99.99% uptime SLAs, and continuous infrastructure hardening are inherited from the world's most trusted cloud platform. Your bank benefits from AWS's security investment without carrying AWS's operating cost.</div>
+              <div className={styles.cardTitle}>World-Class Cloud Security Infrastructure</div>
+              <div className={styles.cardText}>UDB runs on the same cloud infrastructure that powers the world's largest financial institutions. SOC controls, PCI security, 99.99% uptime SLAs, and continuous infrastructure hardening are inherited from the world's most trusted cloud platform. Your bank benefits from this investment without carrying its operating cost.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Proactive Risk Management</div>

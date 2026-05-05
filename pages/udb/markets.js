@@ -102,7 +102,7 @@ export default function UDBMarkets() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Market Development</span>
           <h2 className={styles.sectionHeading}>Building the Market, Not Just the Bank</h2>
-          <p className={styles.sectionSubtext}>In West Africa alone, 60 million individuals have limited digital or financial literacy. Infrastructure investments alone cannot drive uptake if customers lack capability and trust. UDB addresses this with a structured, research-driven literacy program led in collaboration with Oxford University.</p>
+          <p className={styles.sectionSubtext}>In West Africa alone, 60 million individuals have limited digital or financial literacy. Infrastructure investments alone cannot drive uptake if customers lack capability and trust. UDB addresses this with a structured, research-driven literacy program led in collaboration with world-renowned academic institutions.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Four-Phase Literacy Strategy</div>
@@ -115,7 +115,7 @@ export default function UDBMarkets() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>The Literacy Multiplier</div>
-              <div className={styles.cardText}>As client adaptation and trust improve through the Oxford-backed curriculum: default rates decrease to 4%, sustainable loan sizes increase by 20%, and customer retention extends by 3+ years. Customer LTV of ~$110 compounds — targeting $1.165B at 5M users and $2.33B at 10M users. Your bank's value grows as your customers grow.</div>
+              <div className={styles.cardText}>As client adaptation and trust improve through the research-backed curriculum: default rates decrease to 4%, sustainable loan sizes increase by 20%, and customer retention extends by 3+ years. Customer LTV of ~$110 compounds — targeting $1.165B at 5M users and $2.33B at 10M users. Your bank's value grows as your customers grow.</div>
             </div>
           </div>
         </div>

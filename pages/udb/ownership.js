@@ -112,7 +112,7 @@ export default function UDBOwnership() {
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Technology Platform</div>
-              <div className={styles.cardText}>The complete digital banking stack — core engine, mobile channels, payments infrastructure, KYC/AML — built on AWS global infrastructure and deployed in your jurisdiction.</div>
+              <div className={styles.cardText}>The complete digital banking stack — core engine, mobile channels, payments infrastructure, KYC/AML — built on enterprise-grade global cloud infrastructure and deployed in your jurisdiction.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>License &amp; Regulatory Pathway</div>

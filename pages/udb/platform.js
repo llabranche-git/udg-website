@@ -12,7 +12,7 @@ export default function UDBPlatform() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Platform</span>
           <h1 className={styles.bannerHeading}>Full-Stack Banking Infrastructure,<br />Fully Managed</h1>
-          <p className={styles.bannerSub}>Built by a powerhouse of talent from UDG, AWS, Slalom, Qucoon, and Deloitte. Over 200 years of combined experience delivering mission-critical solutions for the Federal Reserve, Royal Bank of Canada, Discover Financial Services, and the Central Bank of Nigeria.</p>
+          <p className={styles.bannerSub}>Built by a powerhouse of talent from the world's largest technology and consulting organizations. Over 200 years of combined experience delivering mission-critical solutions for the world's most demanding financial institutions.</p>
         </div>
       </section>
 
@@ -105,7 +105,7 @@ export default function UDBPlatform() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Multi-Language at Scale</div>
-              <div className={styles.cardText}>Lara AI embeds professional, AI-driven translation directly into the core platform — 200+ languages with human-in-the-loop review, breaking down adoption barriers across Asia, Africa, LATAM, and the GCC.</div>
+              <div className={styles.cardText}>AI-driven translation is embedded directly into the core platform — 200+ languages with human-in-the-loop review, breaking down adoption barriers across Asia, Africa, LATAM, and the GCC.</div>
             </div>
           </div>
         </div>
@@ -175,12 +175,12 @@ export default function UDBPlatform() {
           <p className={styles.sectionSubtext}>Language exclusion is one of the most overlooked barriers in emerging-market banking. UDB eliminates it entirely — not through basic translation, but through full cultural and linguistic adaptation at the platform level.</p>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card}>
-              <div className={styles.cardTitle}>Lara AI — 200+ Language Platform</div>
-              <div className={styles.cardText}>Powered by Translated.'s Lara AI, UDB embeds professional, AI-driven translation directly into the core banking platform. Every interface, every notification, every document is delivered in the customer's preferred language — with human-in-the-loop review ensuring cultural accuracy, not just literal translation. Hausa, Swahili, Yoruba, Arabic, Tagalog, Bahasa, Portuguese, French — your bank speaks every language in your market.</div>
+              <div className={styles.cardTitle}>AI-Powered 200+ Language Platform</div>
+              <div className={styles.cardText}>UDB embeds professional, AI-driven translation directly into the core banking platform. Every interface, every notification, every document is delivered in the customer's preferred language — with human-in-the-loop review ensuring cultural accuracy, not just literal translation. Hausa, Swahili, Yoruba, Arabic, Tagalog, Bahasa, Portuguese, French — your bank speaks every language in your market.</div>
             </div>
             <div className={styles.card}>
-              <div className={styles.cardTitle}>Multi-Lingual Operations via Amazon Connect</div>
-              <div className={styles.cardText}>Amazon Connect powers UDB's call center infrastructure with native multi-lingual routing — customers are connected to agents in their language automatically. 60% reduction in total call volume through AI-first resolution. 50% reduction in agent training time. Your bank's operations team is prepared for every language your market speaks, from day one of launch.</div>
+              <div className={styles.cardTitle}>Multi-Lingual Operations Infrastructure</div>
+              <div className={styles.cardText}>UDB's call center infrastructure features native multi-lingual routing — customers are connected to agents in their language automatically. 60% reduction in total call volume through AI-first resolution. 50% reduction in agent training time. Your bank's operations team is prepared for every language your market speaks, from day one of launch.</div>
             </div>
             <div className={styles.card}>
               <div className={styles.cardTitle}>Beyond Translation — Cultural Adaptation</div>
@@ -203,11 +203,11 @@ export default function UDBPlatform() {
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Curated by World-Renowned Universities</div>
-              <div className={styles.cardText}>Every UDB bank comes with a financial and digital literacy curriculum developed in collaboration with globally respected academic institutions, including Oxford University. The content is grounded in research on how populations in emerging markets learn financial concepts — not adapted from Western curricula, but built from the ground up for the realities of your market.</div>
+              <div className={styles.cardText}>Every UDB bank comes with a financial and digital literacy curriculum developed in collaboration with globally respected academic institutions, including globally respected academic institutions. The content is grounded in research on how populations in emerging markets learn financial concepts — not adapted from Western curricula, but built from the ground up for the realities of your market.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Created Once. Replicated Across 200+ Languages.</div>
-              <div className={styles.cardText}>The literacy curriculum is built once on the UDB platform and automatically replicated across 200+ languages through Lara AI. A single investment in content creation serves every linguistic community in your country — from major national languages to regional dialects — without rebuilding or re-localising the underlying programme. Scale without proportional cost.</div>
+              <div className={styles.cardText}>The literacy curriculum is built once on the UDB platform and automatically replicated across 200+ languages through UDB's language platform. A single investment in content creation serves every linguistic community in your country — from major national languages to regional dialects — without rebuilding or re-localising the underlying programme. Scale without proportional cost.</div>
             </div>
             <div className={styles.darkCard}>
               <div className={styles.cardTitle}>Delivered via Smartphone and USSD</div>

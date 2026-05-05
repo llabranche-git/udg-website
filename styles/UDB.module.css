@@ -390,7 +390,7 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 17px;
   font-weight: 300;
-  color: rgba(255,255,255,0.85);
+  color: #ffffff;
   line-height: 1.65;
   margin: 0;
 }
@@ -737,19 +737,20 @@
 .bannerSub {
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
-  font-weight: 300;
-  color: rgba(255,255,255,0.92);
+  font-weight: 400;
+  color: #ffffff;
   line-height: 1.6;
-  max-width: 640px;
+  max-width: 100%;
   margin: 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
 }
 .bannerSubtext {
   font-family: 'Work Sans', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: rgba(255,255,255,0.92);
+  color: #ffffff;
   line-height: 1.6;
-  max-width: 640px;
+  max-width: 100%;
   margin: 0;
 }
 
