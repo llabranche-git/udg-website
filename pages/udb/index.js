@@ -60,23 +60,24 @@ function SlideContent({ slide, active, goTo }) {
     <>
       <div className={styles.heroCarouselOverlay} />
       <div className={styles.heroCarouselContent}>
-        <div className={styles.heroCarouselLeft}>
-          <span className={styles.heroCarouselLabel}>{slide.label}</span>
+        <span className={styles.heroCarouselLabel}>{slide.label}</span>
+        <div />
+        <div className={styles.heroCarouselHeadlineWrap}>
           <h1 className={styles.heroCarouselHeadline}>{slide.headline}</h1>
         </div>
         <div className={styles.heroCarouselRight}>
           <p className={styles.heroCarouselSub}>{slide.sub}</p>
           <Link href={slide.link} className={styles.udbHeroBtnText}>{slide.cta} →</Link>
-          <div className={styles.heroDots} style={{marginTop:'24px'}}>
-            {heroSlides.map((_, i) => (
-              <button
-                key={i}
-                className={`${styles.heroDot} ${i === active ? styles.heroDotActive : ''}`}
-                onClick={() => goTo(i)}
-                aria-label={`Slide ${i + 1}`}
-              />
-            ))}
-          </div>
+        </div>
+        <div className={styles.heroDotsRow}>
+          {heroSlides.map((_, i) => (
+            <button
+              key={i}
+              className={`${styles.heroDot} ${i === active ? styles.heroDotActive : ''}`}
+              onClick={() => goTo(i)}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
         </div>
       </div>
     </>
@@ -171,7 +172,7 @@ export default function UDBOverview() {
       <HeroCarousel />
 
       {/* Stats */}
-      <section className={`${styles.udbSection} ${styles.altSection}`}>
+      <section className={`${styles.udbSection} ${styles.altSection}`} style={{padding:'48px 0'}}>
         <div className={styles.udbContainer}>
           <div className={styles.statsRow}>
             <div className={styles.statItem}>
@@ -183,13 +184,14 @@ export default function UDBOverview() {
               <div className={styles.statLabel}>Projected emerging-market digital financial services by 2030</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>1B+</div>
+              <div className={styles.statNumber}>1B</div>
               <div className={styles.statLabel}>People the platform is architected to serve across all deployments — a billion-person banking infrastructure</div>
             </div>
             <div className={styles.statItem}>
-              <div className={styles.statNumber}>Live</div>
-              <div className={styles.statLabel}>Deployed and operating today in Nigeria with a founding partner family</div>
+              <div className={styles.statNumber}>200+</div>
+              <div className={styles.statLabel}>Languages the platform speaks natively — every customer served in their own language, from day one</div>
             </div>
+
           </div>
         </div>
       </section>

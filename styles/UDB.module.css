@@ -331,7 +331,9 @@
   padding: 100px 80px 48px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  grid-template-rows: auto 1fr auto;
+  column-gap: 48px;
+  row-gap: 12px;
   align-items: start;
   box-sizing: border-box;
   background: rgba(6, 14, 31, 0.5);
@@ -384,6 +386,13 @@
 .heroDots {
   display: flex;
   gap: 10px;
+}
+.heroDotsRow {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 24px;
 }
 .heroDot {
   width: 8px;
