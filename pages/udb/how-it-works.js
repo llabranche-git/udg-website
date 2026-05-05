@@ -21,6 +21,82 @@ export default function UDBHowItWorks() {
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>Four Stages</span>
           <h2 className={styles.sectionHeading}>From First Conversation to Operating Bank</h2>
+                    <div className={styles.processTimeline}>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}><div className={styles.processNode}>01</div></div>
+              <div className={styles.processStageTitle}>Qualify &amp; Engage</div>
+              <div className={styles.processStageText}>Mutual qualification conversation. Scope confirmed. NDA executed and portal access granted.</div>
+            </div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}><div className={styles.processNode}>02</div></div>
+              <div className={styles.processStageTitle}>Proposal &amp; Alignment</div>
+              <div className={styles.processStageText}>UDB presents a proposal built on your ecosystem and priorities. Discussion and refinement until commercial terms are agreed.</div>
+            </div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}><div className={styles.processNode}>03</div></div>
+              <div className={styles.processStageTitle}>Term Sheet &amp; Due Diligence</div>
+              <div className={styles.processStageText}>Term Sheet issued and reviewed by both parties. Mutual due diligence conducted. Regulatory pathway confirmed. Term Sheet executed.</div>
+            </div>
+
+            <div className={styles.processStage}>
+              <div className={styles.processNodeWrap}><div className={styles.processNode}>04</div></div>
+              <div className={styles.processStageTitle}>Contract &amp; Deployment</div>
+              <div className={styles.processStageText}>Full agreements executed — MSA, Bank Ownership, and Implementation. Milestone 1 payment received. Deployment begins.</div>
+            </div>
+
+            <div className={styles.processMilestones}>
+              <div className={styles.processMilestone}>✦ Engagement process reviewed</div>
+              <div className={styles.processMilestone}>✦ Portal access granted</div>
+              <div className={styles.processMilestone}>✦ NDA signed</div>
+              <div className={styles.processMilestone}>✦ Intake questionnaire</div>
+              <div className={styles.processMilestone}>✦ Proposal prepared</div>
+            </div>
+            <div className={styles.processMilestones}>
+              <div className={styles.processMilestone}>✦ Proposal presented</div>
+              <div className={styles.processMilestone}>✦ Tier confirmed</div>
+              <div className={styles.processMilestone}>✦ Timeline &amp; costs agreed</div>
+              <div className={styles.processMilestone}>✦ Structure agreed</div>
+              <div className={styles.processMilestone}>✦ Key terms aligned</div>
+            </div>
+            <div className={styles.processMilestones}>
+              <div className={styles.processMilestone}>✦ Term Sheet issued</div>
+              <div className={styles.processMilestone}>✦ Legal review</div>
+              <div className={styles.processMilestone}>✦ Due diligence</div>
+              <div className={styles.processMilestone}>✦ Term Sheet signed</div>
+            </div>
+            <div className={styles.processMilestones}>
+              <div className={styles.processMilestone}>✦ Contracts executed</div>
+              <div className={styles.processMilestone}>✦ Milestone 1 payment</div>
+              <div className={styles.processMilestone}>✦ License application</div>
+              <div className={styles.processMilestone}>✦ Deployment begins</div>
+            </div>
+
+          </div>t Head from 'next/head'
+import Link from 'next/link'
+import UDBLayout from '../../components/UDBLayout'
+import styles from '../../styles/UDB.module.css'
+
+export default function UDBHowItWorks() {
+  return (
+    <UDBLayout>
+      <Head><title>Unified Digital Banking — How It Works</title></Head>
+
+      <section className={styles.innerBanner} style={{backgroundImage: "url(/assets/udb-how-it-works.jpg)"}}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>The Process</span>
+          <h1 className={styles.bannerHeading}>From First Conversation<br />to Operating Bank</h1>
+          <p className={styles.bannerSub}>UDB follows a disciplined four-step process to identify the right partner in each country, structure the exclusive framework, deploy the full banking infrastructure, and build the vertical ecosystem that makes your bank the economic anchor of your market.</p>
+        </div>
+      </section>
+
+      {/* 4 Stages — Horizontal Timeline */}
+      <section className={styles.udbSection}>
+        <div className={styles.udbContainer}>
+          <span className={styles.sectionLabel}>Four Stages</span>
+          <h2 className={styles.sectionHeading}>From First Conversation to Operating Bank</h2>
           <div className={styles.processTimeline}>
 
             <div className={styles.processStage}>
@@ -92,7 +168,7 @@ export default function UDBHowItWorks() {
       <section className={`${styles.udbSection} ${styles.altSection}`}>
         <div className={styles.udbContainer}>
           <span className={styles.sectionLabel}>The Partnership Model</span>
-          <h2 className={styles.sectionHeading}>You Bring the Market.<br />We Bring Everything Else.</h2>
+          <h2 className={styles.sectionHeading}>You Bring Your Ecosystem.<br />We Bring Everything Else.</h2>
           <div className={styles.cardGrid2} style={{marginTop:'40px'}}>
             <div className={styles.card}>
               <div className={styles.cardTitle}>What You Bring</div>

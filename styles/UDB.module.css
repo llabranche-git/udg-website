@@ -1299,13 +1299,16 @@
 .processStage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 }
 .processNodeWrap {
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .processNode {
   width: 48px;
@@ -1345,7 +1348,7 @@
   padding-top: 16px;
   width: 100%;
   text-align: left;
-  margin-top: auto;
+  align-self: start;
 }
 .processMilestone {
   font-family: 'Work Sans', sans-serif;
