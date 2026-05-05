@@ -8,7 +8,7 @@ const heroSlides = [
   {
     label: 'Ownership',
     headline: 'Own the Modern Digital Bank in Your Market.',
-    sub: 'You bring the market position. We bring everything else — technology, compliance, operations, and the team.',
+    sub: 'You bring your ecosystem. We bring everything else — technology, compliance, operations, and the team.',
     image: '/assets/udb-hero.jpg',
     link: '/udb/ownership',
     cta: 'Your Ownership',
@@ -16,22 +16,22 @@ const heroSlides = [
   {
     label: 'Platform Scale',
     headline: 'Banking Infrastructure for a Billion People.',
-    sub: 'Architected for the scale of a continent. 150M+ customers per bank. A billion-person platform across all deployments.',
+    sub: 'Architected for the scale of a continent. 150M+ customers per bank. A billion-person platform across the globe.',
     image: '/assets/inf3.jpg',
     link: '/udb/platform',
     cta: 'Explore the Platform',
   },
   {
     label: 'Digital Currency',
-    headline: 'Stable Digital Currency. Built Into Every Bank.',
-    sub: 'FX risk eliminated at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value.',
+    headline: 'Digital Stable Currency. Integrated Into Every Bank.',
+    sub: 'FX risk minimized and controlled at the infrastructure level. Cross-border transfers, remittances, commodity settlement — all in stable value for you and your customers.',
     image: '/assets/inf9.jpg',
     link: '/udb/platform',
     cta: 'Explore the Platform',
   },
   {
     label: 'Total Population Reach',
-    headline: 'Every Customer. Every Phone. Every Market.',
+    headline: 'Every Person. Every Phone. Every Market.',
     sub: 'USSD banking on any mobile phone, any 2G network, no smartphone required. Your TAM is every mobile subscriber in the country.',
     image: '/assets/inf10.jpg',
     link: '/udb/platform',
@@ -48,7 +48,7 @@ const heroSlides = [
   {
     label: 'Security & Compliance',
     headline: 'Born Compliant. Stays Compliant.',
-    sub: '112 standards. 80+ unified controls. AML, FATF Travel Rule, and Tier-1 certifications — built in from day one.',
+    sub: '112 standards. 80+ unified controls. AML, FATF Travel Rule, and Tier-1 international certifications — built in from day one, continuously monitored through AI.',
     image: '/assets/inf4.jpg',
     link: '/udb/security',
     cta: 'Security & Compliance',
@@ -122,7 +122,7 @@ function HeroCarousel() {
     if (i === inc && animating) {
       return {
         transform: 'translateX(0)',
-        transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
+        transition: 'transform 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
         zIndex: 3,
       }
     }
@@ -135,7 +135,7 @@ function HeroCarousel() {
     }
     return {
       transform: 'translateX(100%)',
-      transition: 'transform 1s cubic-bezier(0.4, 0, 0.2, 1)',
+      transition: 'transform 1.2s cubic-bezier(0.4, 0, 0.2, 1)',
       zIndex: 1,
     }
   }
