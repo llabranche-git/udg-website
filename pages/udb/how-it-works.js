@@ -53,7 +53,6 @@ export default function UDBHowItWorks() {
             </div>
             <div className={styles.processMilestones}>
               <div className={styles.processMilestone}>✦ Proposal presented</div>
-              <div className={styles.processMilestone}>✦ Tier confirmed</div>
               <div className={styles.processMilestone}>✦ Timeline &amp; costs agreed</div>
               <div className={styles.processMilestone}>✦ Regulatory pathway mapped</div>
               <div className={styles.processMilestone}>✦ Structure agreed</div>
